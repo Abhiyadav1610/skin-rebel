@@ -1,34 +1,37 @@
 import React from "react";
 import productlineup from "../assets/images/productlineup.jpg"; // Ensure you have product1.png in the assets folder
+// background: #FFAFCD;
+
 const ProductLineup = () => {
   const products = [
     {
       name: "Power Collagen",
       description: "Inner radiance, outer glow.",
-      bgColor: "from-pink-200 to-pink-300",
+      bgColor: "bg-[#FFAFCD]",
       borderColor: "border-amber-600",
-      image: {productlineup},
+      image: { productlineup },
     },
     {
       name: "Vitality Greens",
       description: "Fuel your body, ignite your day.",
-      bgColor: "from-purple-200 to-purple-300",
+
+      bgColor: "bg-[#D899B1]",
       borderColor: "border-amber-600",
-      image: {productlineup},
+      image: { productlineup },
     },
     {
       name: "Omega Boost",
       description: "Love your heart, drop by drop.",
-      bgColor: "from-orange-200 to-orange-300",
+      bgColor: "bg-[#FCD590]",
       borderColor: "border-amber-600",
-      image: {productlineup},
+      image: { productlineup },
     },
     {
       name: "Adaptogen Elixir",
       description: "Find your calm in the chaos.",
-      bgColor: "from-lime-300 to-lime-400",
+      bgColor: "bg-[#BDAA4D]",
       borderColor: "border-amber-600",
-      image: {productlineup},
+      image: { productlineup },
     },
   ];
 
@@ -120,13 +123,13 @@ const ProductLineup = () => {
           {/* Products Grid */}
           <div className="grid grid-cols-4 gap-8 max-w-6xl mx-auto">
             {products.map((product, index) => (
-              <div key={index} className="text-center">
+              <div key={index} className="text-center ">
                 {/* Product Container - Oval shaped */}
                 <div
-                  className={`relative bg-gradient-to-b ${product.bgColor} ${product.borderColor} border-4 rounded-[5rem] p-8 mb-6 h-72 flex flex-col items-center justify-center shadow-lg overflow-hidden`}
+                  className={`relative  ${product.bgColor} ${product.borderColor} border-4 rounded-[5rem] p-8 mb-6 h-72 flex flex-col items-center justify-center shadow-lg overflow-hidden`}
                 >
                   {/* Product Bottle */}
-                  <div className="relative z-10 mb-4">
+                  <div className="relative  z-10 mb-4 ">
                     <div className="w-20 h-28 bg-amber-700 rounded-2xl flex items-center justify-center shadow-lg overflow-hidden">
                       <img
                         src={productlineup}
