@@ -5,6 +5,7 @@ import FeaturesSection from "./components/FeaturesSection";
 import MobileFeature from "./components/MobileFeature";
 import ProductLineup from "./components/ProductLineup";
 import PromotionalSection from "./components/PromotionalSection";
+import TestimonialSection from "./components/TestimonialSection";
 function App() {
   return (
     <div className="App">
@@ -14,6 +15,7 @@ function App() {
       <ProductLineup />
       <MobileFeature />
       <PromotionalSection/>
+      <TestimonialSection/>
     </div>
   );
 }
