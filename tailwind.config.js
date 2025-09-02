@@ -1,23 +1,20 @@
-/** @type {import('tailwindcss').Config} */
-export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+module.exports = {
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
-      colors: {
-        'rebel-pink': '#F8A5C2',
-        'rebel-orange': '#FF6B35',
-        'rebel-peach': '#FFF5F5',
-        'rebel-yellow': '#F4D03F',
-      },
       fontFamily: {
-        'heading': ['Inter', 'sans-serif'],
-        'body': ['Inter', 'sans-serif'],
-        'handwriting': ['Kalam', 'cursive'],
-      }
+        inter: ["Inter", "sans-serif"],
+        kalam: ["Kalam", "cursive"],
+        handwriting: ["Kalam", "cursive"],
+        folklore: ["Folklore", "sans-serif"],
+        "ben-brown": ["Ben Brown", "cursive"],
+      },
+      colors: {
+        "rebel-orange": "#FF4930",
+        "rebel-pink": "#E91E63",
+        "rebel-yellow": "#FFC107",
+      },
     },
   },
   plugins: [],
-}
+};

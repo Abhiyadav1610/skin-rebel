@@ -1,187 +1,223 @@
 import React, { useState } from "react";
+import search from "../assets/icons/ri_search-line.png";
+import profile from "../assets/icons/iconamoon_profile.png";
+import cart from "../assets/icons/mdi_cart-outline.png";
+import skinrebel from "../assets/icons/skin_rebel.png";
 
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
 
   return (
-    <header className="bg-white shadow-sm relative z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <div className="flex-shrink-0">
-            <span className="text-2xl font-bold text-rebel-orange">
-              SKIN REBEL
-            </span>
+    <header
+      className="sticky top-0 z-50 w-full h-[90px]"
+      style={{ backgroundColor: "#FFF9F2" }}
+    >
+      {/* Content container */}
+      <div className="max-w-[1440px] mx-auto w-full h-full flex justify-between items-center px-4 sm:px-8 lg:px-16">
+        {/* Left Side - Text Logo with Real Folklore Font */}
+        <div className="flex items-center">
+          <span
+            className="flex items-center justify-center font-folklore tracking-tight px-2"
+            style={{
+              fontWeight: 400,
+              fontSize: "24px",
+              lineHeight: "28px",
+              letterSpacing: "-0.02em",
+              color: "#FF4930",
+              height: "28px",
+              whiteSpace: "nowrap",
+            }}
+          >
+            SKIN REBEL
+          </span>
+        </div>
+
+        {/* Center - Desktop Navigation Links */}
+        <nav className="hidden lg:flex gap-6 xl:gap-8">
+          <a
+            href="#shop"
+            className="text-[16px] lg:text-[18px] leading-[100%] tracking-[-0.03em] text-gray-900 hover:text-rebel-orange transition-colors"
+            style={{ fontWeight: 550 }}
+          >
+            Shop
+          </a>
+          <a
+            href="#about"
+            className="text-[16px] lg:text-[18px] leading-[100%] tracking-[-0.03em] text-gray-900 hover:text-rebel-orange transition-colors"
+            style={{ fontWeight: 550 }}
+          >
+            About
+          </a>
+          <a
+            href="#benefits"
+            className="text-[16px] lg:text-[18px] leading-[100%] tracking-[-0.03em] text-gray-900 hover:text-rebel-orange transition-colors"
+            style={{ fontWeight: 550 }}
+          >
+            Benefits
+          </a>
+          <a
+            href="#reviews"
+            className="text-[16px] lg:text-[18px] leading-[100%] tracking-[-0.03em] text-gray-900 hover:text-rebel-orange transition-colors"
+            style={{ fontWeight: 550 }}
+          >
+            Reviews
+          </a>
+          <a
+            href="#blog"
+            className="text-[16px] lg:text-[18px] leading-[100%] tracking-[-0.03em] text-gray-900 hover:text-rebel-orange transition-colors"
+            style={{ fontWeight: 550 }}
+          >
+            Blog
+          </a>
+          <a
+            href="#contact"
+            className="text-[16px] lg:text-[18px] leading-[100%] tracking-[-0.03em] text-gray-900 hover:text-rebel-orange transition-colors"
+            style={{ fontWeight: 550 }}
+          >
+            Contact
+          </a>
+        </nav>
+
+        {/* Right Side - Desktop Icons and Button */}
+        <div className="hidden md:flex items-center gap-3 lg:gap-4">
+          {/* Search Icon */}
+          <div className="w-5 h-5 lg:w-6 lg:h-6 cursor-pointer hover:opacity-70 transition-opacity">
+            <img src={search} alt="Search" className="w-full h-full" />
           </div>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          {/* Profile Icon */}
+          <div className="w-5 h-5 lg:w-6 lg:h-6 cursor-pointer hover:opacity-70 transition-opacity">
+            <img src={profile} alt="Profile" className="w-full h-full" />
+          </div>
+
+          {/* Cart Icon */}
+          <div className="w-5 h-5 lg:w-6 lg:h-6 cursor-pointer hover:opacity-70 transition-opacity">
+            <img src={cart} alt="Cart" className="w-full h-full" />
+          </div>
+
+          {/* Shop Now Button */}
+          <button
+            className="w-[140px] h-[45px] lg:w-[163px] lg:h-[50px] px-[8px] lg:px-[10px] py-[12px] lg:py-[16px] rounded-[100px] text-white font-semibold text-sm lg:text-base hover:opacity-90 transition-opacity flex items-center justify-center ml-2"
+            style={{ backgroundColor: "#FF4930", gap: "8px" }}
+          >
+            Shop Now
+          </button>
+        </div>
+
+        {/* Mobile Menu Button */}
+        <div className="md:hidden flex items-center gap-3">
+          {/* Mobile Icons */}
+          <div className="w-5 h-5 cursor-pointer">
+            <img src={search} alt="Search" className="w-full h-full" />
+          </div>
+          <div className="w-5 h-5 cursor-pointer">
+            <img src={cart} alt="Cart" className="w-full h-full" />
+          </div>
+
+          {/* Hamburger Menu Button */}
+          <button
+            onClick={toggleMobileMenu}
+            className="w-6 h-6 flex flex-col justify-center items-center"
+            aria-label="Toggle mobile menu"
+          >
+            <span
+              className={`bg-gray-900 block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
+                isMobileMenuOpen
+                  ? "rotate-45 translate-y-1"
+                  : "-translate-y-0.5"
+              }`}
+            ></span>
+            <span
+              className={`bg-gray-900 block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${
+                isMobileMenuOpen ? "opacity-0" : "opacity-100"
+              }`}
+            ></span>
+            <span
+              className={`bg-gray-900 block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
+                isMobileMenuOpen
+                  ? "-rotate-45 -translate-y-1"
+                  : "translate-y-0.5"
+              }`}
+            ></span>
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile Menu Dropdown */}
+      <div
+        className={`md:hidden bg-[#FFF9F2] border-t border-gray-200 transition-all duration-300 ease-in-out ${
+          isMobileMenuOpen
+            ? "max-h-96 opacity-100"
+            : "max-h-0 opacity-0 overflow-hidden"
+        }`}
+      >
+        <div className="px-4 py-4 space-y-4">
+          {/* Mobile Navigation Links */}
+          <nav className="flex flex-col space-y-3">
             <a
-              href="#"
-              className="text-gray-700 hover:text-rebel-orange transition-colors"
+              href="#shop"
+              className="text-lg font-semibold text-gray-900 hover:text-rebel-orange transition-colors py-2"
+              onClick={() => setIsMobileMenuOpen(false)}
             >
               Shop
             </a>
             <a
-              href="#"
-              className="text-gray-700 hover:text-rebel-orange transition-colors"
+              href="#about"
+              className="text-lg font-semibold text-gray-900 hover:text-rebel-orange transition-colors py-2"
+              onClick={() => setIsMobileMenuOpen(false)}
             >
               About
             </a>
             <a
-              href="#"
-              className="text-gray-700 hover:text-rebel-orange transition-colors"
+              href="#benefits"
+              className="text-lg font-semibold text-gray-900 hover:text-rebel-orange transition-colors py-2"
+              onClick={() => setIsMobileMenuOpen(false)}
             >
               Benefits
             </a>
             <a
-              href="#"
-              className="text-gray-700 hover:text-rebel-orange transition-colors"
+              href="#reviews"
+              className="text-lg font-semibold text-gray-900 hover:text-rebel-orange transition-colors py-2"
+              onClick={() => setIsMobileMenuOpen(false)}
             >
               Reviews
             </a>
             <a
-              href="#"
-              className="text-gray-700 hover:text-rebel-orange transition-colors"
+              href="#blog"
+              className="text-lg font-semibold text-gray-900 hover:text-rebel-orange transition-colors py-2"
+              onClick={() => setIsMobileMenuOpen(false)}
             >
               Blog
             </a>
             <a
-              href="#"
-              className="text-gray-700 hover:text-rebel-orange transition-colors"
+              href="#contact"
+              className="text-lg font-semibold text-gray-900 hover:text-rebel-orange transition-colors py-2"
+              onClick={() => setIsMobileMenuOpen(false)}
             >
               Contact
             </a>
           </nav>
 
-          {/* Desktop Actions */}
-          <div className="hidden md:flex items-center space-x-4">
-            <button className="p-2 hover:text-rebel-orange transition-colors">
-              <svg
-                className="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </button>
-            <button className="p-2 hover:text-rebel-orange transition-colors">
-              <svg
-                className="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                />
-              </svg>
-            </button>
-            <button className="p-2 hover:text-rebel-orange transition-colors">
-              <svg
-                className="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.5 5M7 13l2.5 5M17 13v6a2 2 0 01-2 2H9a2 2 0 01-2-2v-6"
-                />
-              </svg>
-            </button>
-            <button className="bg-rebel-orange text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition-all">
+          {/* Mobile Action Buttons */}
+          <div className="flex items-center gap-4 pt-4 border-t border-gray-200">
+            <div className="w-6 h-6 cursor-pointer">
+              <img src={profile} alt="Profile" className="w-full h-full" />
+            </div>
+
+            {/* Mobile Shop Now Button */}
+            <button
+              className="flex-1 h-[45px] rounded-full text-white font-semibold text-base hover:opacity-90 transition-opacity"
+              style={{ backgroundColor: "#FF4930", padding: "12px 16px" }}
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
               Shop Now
             </button>
           </div>
-
-          {/* Mobile menu button */}
-          <button
-            className="md:hidden p-2"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              {isMenuOpen ? (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              ) : (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              )}
-            </svg>
-          </button>
         </div>
-
-        {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <div className="md:hidden absolute top-16 left-0 right-0 bg-white shadow-lg border-t">
-            <div className="px-4 py-2 space-y-2">
-              <a
-                href="#"
-                className="block py-2 text-gray-700 hover:text-rebel-orange"
-              >
-                Shop
-              </a>
-              <a
-                href="#"
-                className="block py-2 text-gray-700 hover:text-rebel-orange"
-              >
-                About
-              </a>
-              <a
-                href="#"
-                className="block py-2 text-gray-700 hover:text-rebel-orange"
-              >
-                Benefits
-              </a>
-              <a
-                href="#"
-                className="block py-2 text-gray-700 hover:text-rebel-orange"
-              >
-                Reviews
-              </a>
-              <a
-                href="#"
-                className="block py-2 text-gray-700 hover:text-rebel-orange"
-              >
-                Blog
-              </a>
-              <a
-                href="#"
-                className="block py-2 text-gray-700 hover:text-rebel-orange"
-              >
-                Contact
-              </a>
-              <button className="w-full bg-rebel-orange text-white px-6 py-2 rounded-full mt-4 mb-4">
-                Shop Now
-              </button>
-            </div>
-          </div>
-        )}
       </div>
     </header>
   );

@@ -114,7 +114,7 @@ const TestimonialSection = () => {
         </div>
 
         {/* Bottom Section - Four Testimonial Images */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 pb-20">
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
@@ -144,47 +144,36 @@ const TestimonialSection = () => {
                   </div>
                 </div>
 
-                {/* Cloud-shaped Overlapping Container */}
-                <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 z-10">
-                  {/* Cloud SVG Background */}
-                  <div className="relative">
-                    <svg
-                      width="180"
-                      height="100"
-                      viewBox="0 0 180 100"
-                      className="fill-gradient-to-br from-orange-100 to-pink-100 drop-shadow-lg"
-                    >
-                      <path
-                        d="M25,60 C15,45 25,35 35,40 C40,20 60,20 65,40 C75,35 85,45 85,50 C95,45 105,55 95,65 C110,70 105,85 90,80 L35,80 C20,85 10,70 25,60 Z"
-                        fill="#FFF4E6"
-                        stroke="#F59E0B"
-                        strokeWidth="2"
-                      />
-                    </svg>
+                {/* Simple Cloud-like Container - FIXED */}
+                <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 z-10">
+                  <div
+                    className="bg-gradient-to-br from-orange-100 to-pink-100 border-2 border-amber-200 shadow-lg px-6 py-3 w-40 h-20 flex flex-col items-center justify-center text-center"
+                    style={{
+                      borderRadius: "50% 80% 60% 70% / 60% 30% 70% 40%",
+                      clipPath:
+                        "polygon(20% 0%, 80% 0%, 100% 25%, 95% 50%, 100% 75%, 80% 100%, 20% 100%, 0% 75%, 5% 50%, 0% 25%)",
+                    }}
+                  >
+                    {/* Name - Truncated to fit */}
+                    <h3 className="text-sm font-bold text-gray-900 truncate w-full mb-0.5 leading-tight">
+                      {testimonial.name}
+                    </h3>
 
-                    {/* Content inside cloud */}
-                    <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
-                      {/* Name */}
-                      <h3 className="text-lg font-bold text-gray-900 mb-1">
-                        {testimonial.name}
-                      </h3>
+                    {/* Instagram Handle - Truncated to fit */}
+                    <p className="text-xs text-gray-600 truncate w-full mb-1 leading-tight">
+                      {testimonial.instagram}
+                    </p>
 
-                      {/* Instagram Handle */}
-                      <p className="text-gray-600 text-sm mb-2">
-                        {testimonial.instagram}
-                      </p>
-
-                      {/* Star Rating */}
-                      <div className="flex items-center justify-center">
-                        <div className="w-4 h-4 text-rebel-yellow mr-1">
-                          <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                          </svg>
-                        </div>
-                        <span className="text-gray-900 font-semibold text-sm">
-                          {testimonial.rating}
-                        </span>
+                    {/* Star Rating */}
+                    <div className="flex items-center justify-center">
+                      <div className="w-3 h-3 text-rebel-yellow mr-1">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
                       </div>
+                      <span className="text-gray-900 font-semibold text-xs">
+                        {testimonial.rating}
+                      </span>
                     </div>
                   </div>
                 </div>

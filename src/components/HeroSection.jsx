@@ -1,130 +1,218 @@
 import React from "react";
-import hero1 from "../assets/images/hero1.jpg"; // Ensure you have a hero.jpg in the assets folder
-import hero2 from "../assets/images/hero2.jpg"; // Ensure you have a hero.png in the assets folder
-import flowerIcon from "../assets/images/flowerIcon.png"; // Ensure you have a flower-icon.svg in the assets folder
+import img1 from '../assets/images/hero/1.png'
+import img2 from "../assets/images/hero/2.png";
+import img3 from "../assets/images/hero/3.png";
+import img4 from "../assets/images/hero/4.png";
+import img5 from "../assets/images/hero/5.png";
+import img6 from "../assets/images/hero/6.png";
+
 const HeroSection = () => {
   return (
-    <section className="bg-gradient-to-br from-rebel-pink to-pink-300 min-h-screen flex items-center overflow-hidden py-4">
-      <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-6">
-        {/* Inner cream/beige rounded container - much larger now */}
-        <div className="bg-gradient-to-br from-orange-50 to-pink-50 rounded-3xl lg:rounded-[3rem] w-lg p-12  lg:p-40 shadow-lg mx-2">
-          <div className="flex flex-col lg:flex-row items-center justify-between">
-            {/* Left Content */}
-            <div className="lg:w-1/2 mb-12 lg:mb-0">
-              <div className="text-center lg:text-left">
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black text-rebel-orange mb-6 leading-tight">
-                  SKINCARE
-                  <br />
-                  WITH AN
-                  <br />
-                  ATTITUDE.
-                </h1>
-                <p className="text-lg sm:text-xl text-gray-800 mb-8 font-handwriting">
-                  where good skin meets bold energy
-                </p>
-                <button className="bg-transparent text-rebel-orange px-8 py-3 rounded-full font-semibold border-2 border-rebel-orange hover:bg-rebel-orange hover:text-white transition-all">
-                  Shop Now
-                </button>
-              </div>
-            </div>
+    <section
+      className="relative w-screen h-[925px]"
+      style={{
+        backgroundColor: "#FFAFCD",
+        opacity: 1,
+        transform: "rotate(0deg)",
+      }}
+    >
+      {/* Inner Content Container */}
+      <div
+        className="absolute"
+        style={{
+          width: "1412px",
+          height: "698px",
+          top: "53px",
+          left: "64px",
+          opacity: 1,
+          borderRadius: "64px",
+          backgroundColor: "#FFF9F2",
+          transform: "rotate(0deg)",
+        }}
+      >
+        {/* Left Side - Text Content with exact positioning */}
+        <div
+          className="absolute flex flex-col"
+          style={{
+            width: "659px",
+            height: "384px",
+            top: "192px",
+            left: "53px",
+            opacity: 1,
+            gap: "24px",
+            transform: "rotate(0deg)",
+          }}
+        >
+          <h1
+            className="font-folklore uppercase"
+            style={{
+              fontWeight: 400,
+              fontSize: "85px",
+              lineHeight: "90%",
+              letterSpacing: "0%",
+              color: "#FF4930",
+            }}
+          >
+            Skincare
+            <br />
+            with an
+            <br />
+            Attitude.
+          </h1>
 
-            {/* Right Content - Image Composition */}
-            <div className="lg:w-1/2 relative">
-              <div
-                className="relative mx-auto"
-                style={{ width: "400px", height: "400px" }}
-              >
-                {/* Main large vertical oval image */}
-                <div className="absolute top-0 left-0 w-64 h-96 lg:w-72 lg:h-[400px] bg-white rounded-full p-3 shadow-2xl overflow-hidden">
-                  <img
-                    src={hero1}
-                    alt="Woman with Skin Rebel product"
-                    className="w-full h-full object-cover rounded-full"
-                  />
+          <p
+            className="font-ben-brown lowercase"
+            style={{
+              fontWeight: 400,
+              fontStyle: "normal",
+              fontSize: "64px",
+              lineHeight: "90%",
+              letterSpacing: "-0.03em",
+              color: "#8A5A07",
+              textTransform: "lowercase",
+            }}
+          >
+            where good skin meets bold energy
+          </p>
 
-                  {/* "it's a vibe" text bubble */}
-                  <div className="absolute bottom-16 left-8 bg-white px-3 py-1 rounded-full shadow-md border">
-                    <span className="text-gray-700 font-handwriting text-sm">
-                      it's a vibe
-                    </span>
-                  </div>
-                </div>
+          <button
+            className="text-white font-semibold text-lg hover:opacity-90 transition-opacity flex items-center justify-center"
+            style={{
+              width: "234px",
+              height: "50px",
+              color: "#FF4930",
+              opacity: 1,
+              borderRadius: "100px",
+              border: "2px solid #FF4930",
+              gap: "10px",
+              paddingTop: "16px",
+              paddingRight: "10px",
+              paddingBottom: "16px",
+              paddingLeft: "10px",
+              transform: "rotate(0deg)",
+            }}
+          >
+            Shop Now
+          </button>
+        </div>
 
-                {/* Smaller vertical oval image - bottom right overlap */}
-                <div className="absolute bottom-0 right-0 w-32 h-48 lg:w-36 lg:h-52 bg-white rounded-full p-2 shadow-xl overflow-hidden">
-                  <img
-                    src={hero2}
-                    alt="Woman applying skincare"
-                    className="w-full h-full object-cover rounded-full"
-                  />
-                </div>
+        {/* Image 1 - Behind */}
+        <div
+          className="absolute flex flex-col"
+          style={{
+            width: "453px",
+            height: "330px",
+            top: "319px",
+            left: "710px",
+            borderTopLeftRadius: "300px",
+            borderTopRightRadius: "32px",
+            borderBottomRightRadius: "32px",
+            borderBottomLeftRadius: "32px",
+          }}
+        >
+          <img
+            src={img1}
+            alt="Hero Visual"
+            className="w-full h-full object-cover"
+          />
+        </div>
 
-                {/* SKIN REBEL Badge - Star shaped */}
-                <div className="absolute bottom-6 right-18 z-10">
-                  <div className="relative">
-                    {/* Star/burst background */}
-                    <div className="w-20 h-20 bg-rebel-yellow rounded-full relative flex items-center justify-center shadow-lg transform rotate-12">
-                      {/* Star points */}
-                      <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 w-3 h-6 bg-rebel-yellow rotate-0"></div>
-                      <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-3 h-6 bg-rebel-yellow rotate-0"></div>
-                      <div className="absolute -left-2 top-1/2 transform -translate-y-1/2 w-6 h-3 bg-rebel-yellow rotate-0"></div>
-                      <div className="absolute -right-2 top-1/2 transform -translate-y-1/2 w-6 h-3 bg-rebel-yellow rotate-0"></div>
-
-                      {/* Center text */}
-                      <div className="text-center">
-                        <span className="text-white font-bold text-xs leading-tight">
-                          SKIN
-                          <br />
-                          REBEL
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Decorative Elements */}
-
-                {/* Top right decorative burst/sun */}
-                <div className="absolute -top-4 right-8 w-12 h-12 text-rebel-yellow opacity-70">
-                  <svg viewBox="0 0 100 100" className="w-full h-full">
-                    <g transform="translate(50,50)">
-                      {/* Sun rays */}
-                      {Array.from({ length: 16 }, (_, i) => (
-                        <line
-                          key={i}
-                          x1="0"
-                          y1="-35"
-                          x2="0"
-                          y2="-45"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          transform={`rotate(${i * 22.5})`}
-                        />
-                      ))}
-                      {/* Center circle */}
-                      <circle cx="0" cy="0" r="8" fill="currentColor" />
-                    </g>
-                  </svg>
-                </div>
-
-                {/* Top right flower decoration */}
-                <div className="absolute top-8 -right-4 w-10 h-10 animate-pulse">
-                  <img
-                    src={flowerIcon}
-                    alt="Decorative flower"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-
-                {/* Bottom left small circle */}
-                <div className="absolute bottom-4 -left-6 w-4 h-4 bg-pink-300 rounded-full animate-bounce"></div>
-
-                {/* Additional small decorative elements */}
-                <div className="absolute top-32 left-4 w-2 h-2 bg-rebel-orange rounded-full opacity-60"></div>
-                <div className="absolute bottom-24 right-2 w-3 h-3 bg-rebel-pink rounded-full opacity-50"></div>
-              </div>
-            </div>
-          </div>
+        {/* Image 2 - Overlapping on top */}
+        <div
+          className="absolute flex flex-col"
+          style={{
+            width: "323px",
+            height: "484px",
+            top: "62px",
+            left: "724px",
+            borderRadius: "300px",
+          }}
+        >
+          <img
+            src={img2}
+            alt="Hero Visual"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        {/* Image 3 - Overlapping on top */}
+        <div
+          className="absolute flex flex-col"
+          style={{
+            width: "275px",
+            height: "381px",
+            top: "258px",
+            left: "1005px",
+            borderRadius: "300px",
+            opacity: 1,
+          }}
+        >
+          <img src={img3} alt="Hero Visual" />
+        </div>
+        {/* Image 4 - Overlapping on top */}
+        <div
+          className="absolute flex flex-col"
+          style={{
+            width: "135.2px",
+            height: "136.01px",
+            top: "43px",
+            left: "656px",
+            opacity: 1,
+          }}
+        >
+          <img src={img4} alt="Hero Visual" />
+        </div>
+        {/* Image 5 - Overlapping on top */}
+        <div
+          className="absolute flex flex-col"
+          style={{
+            width: "91.2px",
+            height: "103.01px",
+            top: "159px",
+            left: "1148px",
+            opacity: 1,
+          }}
+        >
+          <img src={img5} alt="Hero Visual" />
+        </div>
+        {/* Image 6 - Overlapping on top */}
+        <div
+          className="absolute flex flex-col"
+          style={{
+            width: "260.2px",
+            height: "203.01px",
+            top: "465px",
+            left: "764.7px",
+            border: "4px",
+            // alignmentBaseline:-6.49,
+            opacity: 1,
+          }}
+        >
+          <img src={img6} alt="Hero Visual" />
+        </div>
+        {/* Image 7 - Overlapping on top */}
+        <div
+          className="absolute flex flex-col"
+          style={{
+            width: "146.2px",
+            height: "107.01px",
+            top: "525px",
+            left: "826.7px",
+            border: "4px",
+            transform: "rotate(-6.49deg)", // Added rotation
+          }}
+        >
+          <h2
+            className="font-folklore uppercase"
+            style={{
+              width: "400.2px",
+              fontSize: "46px",
+              letterSpacing: "-3%",
+              lineHeight: "100%",
+              color: "white",
+            }}
+          >
+            SKIN <br /> REBEL
+          </h2>
         </div>
       </div>
     </section>
