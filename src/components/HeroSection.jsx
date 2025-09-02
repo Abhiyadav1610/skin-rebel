@@ -8,8 +8,8 @@ import img6 from "../assets/images/hero/6.png";
 
 const HeroSection = () => {
   return (
-    <section
-      className="relative w-screen h-[925px]"
+    <div
+      className=" relative flex justify-center items-center  h-[925px]"
       style={{
         backgroundColor: "#FFAFCD",
         opacity: 1,
@@ -20,10 +20,11 @@ const HeroSection = () => {
       <div
         className="absolute"
         style={{
-          width: "1412px",
+          width: "1300px",
+          display: "flex",
           height: "698px",
-          top: "53px",
-          left: "64px",
+          top: "50px",
+          // left: "64px",
           opacity: 1,
           borderRadius: "64px",
           backgroundColor: "#FFF9F2",
@@ -215,7 +216,7 @@ const HeroSection = () => {
           </h2>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

@@ -6,6 +6,7 @@ module.exports = {
         inter: ["Inter", "sans-serif"],
         kalam: ["Kalam", "cursive"],
         handwriting: ["Kalam", "cursive"],
+        "darker-grotesque": ["Darker Grotesque", "sans-serif"],
         folklore: ["Folklore", "sans-serif"],
         "ben-brown": ["Ben Brown", "cursive"],
       },
