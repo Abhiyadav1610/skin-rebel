@@ -1,70 +1,156 @@
 import React from 'react';
 import hero1 from "../assets/images/hero1.jpg"; // Ensure you have a hero.jpg in the assets folder
+import img1 from '../assets/images/mobile/1.png'
+import img2 from "../assets/images/feature/1.png";
+import img3 from "../assets/images/mobile/2.png";
+import img4 from "../assets/images/hero/4.png";
+import img5 from "../assets/images/mobile/3.png";
+import img8 from "../assets/images/feature/7.png";
 
 const MobileFeature = () => {
   return (
-    <section className="bg-gradient-to-br from-orange-50 to-yellow-50 py-16 lg:py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
-          {/* Text Content */}
-          <div className="lg:w-1/2 text-center lg:text-left">
-            <div className="flex items-center justify-center lg:justify-start mb-6">
-              <div className="w-6 h-6 text-rebel-yellow mr-2">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                </svg>
-              </div>
-              <span className="text-gray-700 font-handwriting text-lg">
-                some vibes you just have to see.
-              </span>
-            </div>
+    <section
+      style={{
+        height: "781px",
+        backgroundColor: "#fff5ea",
+      }}
+    >
+      <div className="relative">
+        {/* Text Content */}
 
-            <h2 className="text-2xl lg:text-3xl xl:text-4xl font-bold text-gray-900 mb-6 leading-tight">
-              Skincare that works While
-              <br />
-              you live your life
-            </h2>
-
-            <p className="text-gray-600 mb-8 text-lg">
-              From inside-out hydration to visible radiance, Skin Rebel gives
-              you the tools your skin needs to stay strong and luminous.
-            </p>
-
-            {/* Badge */}
-            <div className="inline-block">
-              <div className="bg-rebel-orange text-white px-8 py-4 rounded-full transform -rotate-2 shadow-lg hover:rotate-0 transition-transform duration-300">
-                <span className="font-bold text-lg">GLOW IN MOTION</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Image */}
-          <div className="lg:w-1/2 flex justify-center">
-            <div className="relative">
-              <div className="w-72 h-80 lg:w-80 lg:h-96 bg-gradient-to-br from-orange-100 to-pink-100 rounded-full shadow-2xl overflow-hidden p-4">
-                <div className="w-full h-full bg-gradient-to-br from-orange-200 to-pink-200 rounded-full overflow-hidden relative">
-                  <img
-                    src={hero1}
-                    alt=""
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-
-              {/* Floating decorative elements */}
-              <div className="absolute -top-6 -right-6 w-8 h-8 text-rebel-yellow animate-spin">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <circle cx="12" cy="12" r="10" />
-                </svg>
-              </div>
-
-              <div className="absolute -bottom-4 -left-4 w-6 h-6 text-pink-300 animate-pulse">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                </svg>
-              </div>
+        <div
+          className="absolute"
+          style={{
+            width: "678px",
+            height: "329.15px",
+            top: "257px",
+            left: "65px",
+          }}
+        >
+          <div className="flex ">
+            <div className=" flex flex-row ">
+              <img
+                style={{ width: "58px", height: "58px" }}
+                src={img2}
+                alt=""
+              />
+              <p
+                className="font-ben-brown lowercase"
+                style={{
+                  fontWeight: 400,
+                  fontStyle: "normal",
+                  fontSize: "64px",
+                  lineHeight: "90%",
+                  letterSpacing: "-0.03em",
+                  color: "#8A5A07",
+                  textTransform: "lowercase",
+                }}
+              >
+                Some vibes you just have to see
+              </p>
             </div>
           </div>
+
+          <h2
+            style={{
+              fontFamily: "Darker Grotesque, sans-serif",
+              fontWeight: "700",
+              style: "bold",
+              fontSize: "42px",
+              lineHeight: "90%",
+              letterSpacing: "-3%",
+            }}
+          >
+            Skincare that works While
+            <br />
+            you live your life
+          </h2>
+
+          <p
+            className="absolute"
+            style={{
+              top: "150px",
+              fontFamily: "Darker Grotesque, sans-serif",
+              fontWeight: "500",
+              fontSize: "22px",
+              lineHeight: "100%",
+              letterSpacing: "0%",
+            }}
+          >
+            From inside-out hydration to visible radiance, Skin Rebel gives you
+            the tools your skin needs to stay strong and luminous.
+          </p>
+        </div>
+
+        {/* Image */}
+        <div
+          className="absolute"
+          style={{
+            width: "489px",
+            height: "680px",
+            top: "61px",
+            left: "888px",
+            borderRadius: "300px",
+            border: "1px",
+          }}
+        >
+          <img src={img1} alt="" className="w-full h-full object-cover" />
+        </div>
+
+        {/* star section .......................  */}
+
+        <div
+          className="absolute flex flex-col"
+          style={{
+            width: "135.2px",
+            height: "136.01px",
+            top: "189px",
+            left: "701px",
+            opacity: 1,
+          }}
+        >
+          <img src={img4} alt="Hero Visual" />
+        </div>
+        <div
+          className="absolute flex flex-col"
+          style={{
+            width: "135.2px",
+            height: "136.01px",
+            top: "611px",
+            left: "377px",
+            opacity: 1,
+          }}
+        >
+          <img src={img5} alt="Hero Visual" />
+        </div>
+{/* outer flower ...........................  */}
+      <div
+        className="absolute flex flex-col"
+        style={{
+          width: "91.55px",
+          height: "103.01px",
+          top: "142.37px",
+          left: "58px",
+          opacity: 1,
+        }}
+      >
+        <img src={img8} alt="Hero Visual" />
+      </div>
+
+        {/* cloud section ..............  */}
+        <div
+          className="absolute flex flex-col"
+          style={{
+            width: "260.2px",
+            height: "203.01px",
+            top: "330px",
+            left: "722.7px",
+            border: "4px",
+            // alignmentBaseline:-6.49,
+            opacity: 1,
+          }}
+        >
+          <img src={img3} alt="Hero Visual" />
         </div>
       </div>
     </section>

@@ -50,6 +50,7 @@ const FeaturesSection = () => {
               The Glow Manifesto
             </p>
           </div>
+          
           <div
             className=" flex justify-center"
             style={{ width: "720px", height: "65px" }}
