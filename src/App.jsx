@@ -13,13 +13,14 @@ function App() {
     <div className="App">
       <Header />
       <HeroSection />
+      {/*
       <FeaturesSection />
       <ProductLineup />
       <MobileFeature />
       <PromotionalSection/>
       <TestimonialSection/>
       <ProductView/>
-      <Footer/>
+      <Footer/> */}
     </div>
   );
 }
