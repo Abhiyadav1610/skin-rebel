@@ -3,7 +3,7 @@ import img1 from "../assets/images/testimonials/1.png";
 import img2 from "../assets/images/testimonials/2.png";
 import img3 from "../assets/images/testimonials/3.png";
 import img4 from "../assets/images/testimonials/4.png";
-import img5 from "../assets/images/feature/1.png";
+import img5 from "../assets/images/feature/1.svg";
 
 const TestimonialSection = () => {
   // Testimonial images array to avoid repetition

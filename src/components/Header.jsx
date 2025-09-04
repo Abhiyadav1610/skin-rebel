@@ -11,10 +11,10 @@ const Header = () => {
   };
 
   return (
-    <header className=" top-0 z-50 w-full min-w-full bg-[#FFF9F2] pb-10">
+    <header className="top-0 z-50 w-full bg-[#FFF9F2] pb-10 overflow-x-hidden">
       {/* Full width background container */}
-      <div className="w-screen bg-[#FFF9F2] h-[60px] sm:h-[70px] lg:h-[90px]">
-        <div className="max-w-[1440px] mx-auto w-full h-full flex items-center justify-between xl:justify-start px-4 sm:px-6 lg:px-16 xl:gap-[359px]">
+      <div className="w-full bg-[#FFF9F2] h-[60px] sm:h-[70px] lg:h-[90px]">
+        <div className="max-w-[1440px] mx-auto w-full h-full flex items-center justify-between px-4 sm:px-6 lg:pl-12 lg:pr-[64px]">
           {/* Combined Left Side (Logo) and Center (Desktop Navigation) */}
           <div className="flex items-center gap-6 xl:gap-8">
             {/* Left Side - Text Logo with Real Folklore Font */}
@@ -90,7 +90,7 @@ const Header = () => {
             </button>
           </div>
 
-          {/* Mobile Menu Section (matches the provided image) */}
+          {/* Mobile Menu Section */}
           <div className="md:hidden flex items-center gap-4">
             {/* Mobile Icons */}
             <div className="w-5 h-5 sm:w-6 sm:h-6 cursor-pointer hover:opacity-70 transition-opacity">
@@ -139,7 +139,6 @@ const Header = () => {
         }`}
       >
         <div className="px-4 sm:px-6 py-4 space-y-4">
-          {/* Mobile Navigation Links */}
           <nav className="flex flex-col space-y-3">
             <a
               href="#shop"
@@ -185,13 +184,10 @@ const Header = () => {
             </a>
           </nav>
 
-          {/* Mobile Action Buttons */}
           <div className="flex items-center gap-4 pt-4 border-t border-gray-200">
             <div className="w-6 h-6 cursor-pointer hover:opacity-70 transition-opacity">
               <img src={profile} alt="Profile" className="w-full h-full" />
             </div>
-
-            {/* Mobile Shop Now Button */}
             <button
               className="flex-1 h-[45px] rounded-full hover:opacity-90 transition-opacity bg-[#FF4930] px-4 py-3"
               onClick={() => setIsMobileMenuOpen(false)}

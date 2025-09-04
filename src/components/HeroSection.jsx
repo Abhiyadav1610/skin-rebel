@@ -8,14 +8,12 @@ import img6 from "../assets/images/hero/6.png";
 
 const HeroSection = () => {
   return (
-    <div className="relative flex justify-center items-center min-h-screen bg-[#FFAFCD] opacity-100 p-4 sm:p-6">
+    <div className="relative flex flex-col justify-center items-center h-[925px] min-h-screen bg-[#FFAFCD] w-full max-w-full overflow-x-hidden">
       {/* Inner Content Container */}
-      <div className="relative w-full max-w-[1400px] min-h-[700px] sm:min-h-[800px] lg:min-h-[690px] rounded-[32px] sm:rounded-[48px] lg:rounded-[64px] bg-[#FFF9F2] overflow-hidden">
-        {/* Mobile Layout (iPhone 16 Plus and smaller) */}
+      <div className="relative w-full max-w-[1500px] min-h-[700px] sm:min-h-[800px] lg:min-h-[690px] rounded-[32px] sm:rounded-[48px] lg:rounded-[64px] bg-[#FFF9F2] overflow-hidden mx-4 sm:mx-6 -mt-16 lg:-mt-20">
+        {/* Mobile Layout */}
         <div className="block lg:hidden">
-          {/* Mobile Content */}
           <div className="flex flex-col items-center text-center px-6 sm:px-8 pt-8 sm:pt-12">
-            {/* Main Heading - Updated with consistent styling */}
             <h1 className="font-folklore uppercase font-normal text-[40px] sm:text-[52px] leading-[90%] tracking-normal text-[#FF4930] mb-4 sm:mb-6">
               Skincare
               <br />
@@ -24,20 +22,16 @@ const HeroSection = () => {
               Attitude.
             </h1>
 
-            {/* Subheading */}
             <p className="font-ben-brown lowercase font-normal text-[22px] sm:text-[28px] leading-[90%] tracking-[-0.03em] text-[#8A5A07] mb-6 sm:mb-8">
               where good skin meets bold energy
             </p>
 
-            {/* Button */}
             <button className="text-[#FF4930] font-semibold text-lg rounded-full border-2 border-[#FF4930] w-[200px] h-[50px] hover:opacity-90 transition-opacity flex items-center justify-center px-4 gap-2 mb-8 sm:mb-12">
               Shop Now
             </button>
           </div>
 
-          {/* Mobile Images Container */}
           <div className="relative h-[400px] sm:h-[500px] mx-4 sm:mx-6">
-            {/* Image 2 - Main central image */}
             <div className="absolute rounded-[200px] overflow-hidden w-[180px] sm:w-[220px] h-[270px] sm:h-[320px] top-[20px] sm:top-[30px] left-1/2 transform -translate-x-1/2 z-10">
               <img
                 src={img2}
@@ -46,7 +40,6 @@ const HeroSection = () => {
               />
             </div>
 
-            {/* Image 4 - Top left (on top of main image) */}
             <div className="absolute overflow-hidden w-[70px] sm:w-[80px] h-[70px] sm:h-[80px] top-[10px] sm:top-[20px] left-[20px] sm:left-[30px] z-20">
               <img
                 src={img4}
@@ -55,7 +48,6 @@ const HeroSection = () => {
               />
             </div>
 
-            {/* Image 5 - Top right (on top of main image) */}
             <div className="absolute overflow-hidden w-[60px] sm:w-[70px] h-[70px] sm:h-[80px] top-[0px] sm:top-[100px] right-[30px] sm:right-[40px] z-20">
               <img
                 src={img5}
@@ -64,7 +56,6 @@ const HeroSection = () => {
               />
             </div>
 
-            {/* Image 6 - Bottom */}
             <div className="absolute overflow-hidden w-[160px] sm:w-[180px] h-[120px] sm:h-[140px] bottom-[20px] sm:bottom-[30px] left-1/2 transform -translate-x-1/2 z-20">
               <img
                 src={img6}
@@ -73,7 +64,6 @@ const HeroSection = () => {
               />
             </div>
 
-            {/* Text Overlay - "SKIN REBEL" (on top of Image 6) */}
             <div className="absolute bottom-[60px] sm:bottom-[80px] left-1/2 transform -translate-x-1/2 rotate-[-6.49deg] z-20">
               <h2 className="font-folklore uppercase text-[24px] sm:text-[32px] tracking-[-3%] leading-[100%] text-white text-center">
                 SKIN
@@ -84,11 +74,9 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Desktop Layout (Large screens and up) */}
+        {/* Desktop Layout */}
         <div className="hidden lg:block">
-          {/* Left Side - Text Content */}
           <div className="absolute flex flex-col w-[659px] h-[384px] top-[192px] left-[53px] opacity-100 gap-6">
-            {/* Main Heading - Already correct */}
             <h1 className="font-folklore uppercase font-normal text-[85px] leading-[90%] tracking-normal text-[#FF4930]">
               Skincare
               <br />
@@ -106,7 +94,7 @@ const HeroSection = () => {
             </button>
           </div>
 
-          {/* Desktop Images - Exact positioning maintained */}
+          {/* Desktop Images */}
           <div className="absolute flex flex-col w-[453px] h-[330px] top-[319px] left-[710px] rounded-tl-[300px] rounded-tr-[32px] rounded-br-[32px] rounded-bl-[32px] overflow-hidden">
             <img
               src={img1}
@@ -162,6 +150,66 @@ const HeroSection = () => {
               REBEL
             </h2>
           </div>
+        </div>
+      </div>
+
+      {/* Bottom Scrolling Banner */}
+      <div className="absolute bottom-0 w-full overflow-hidden py-4 bg-[#FFF9F2] ">
+        <div className="flex animate-scroll whitespace-nowrap">
+          <span className="font-folklore uppercase text-4xl font-bold text-[#FFA200] mx-8">
+            GLOW LOUD
+          </span>
+          <span className="text-2xl text-black mx-4">✦</span>
+          <span className="font-folklore uppercase text-4xl font-bold text-[#FFA200] mx-8">
+            GOOD SKIN
+          </span>
+          <span className="text-2xl text-black mx-4">✦</span>
+          <span className="font-folklore uppercase text-4xl font-bold text-[#FFA200] mx-8">
+            GOOD MOOD
+          </span>
+          <span className="text-2xl text-black mx-4">✦</span>
+          <span className="font-folklore uppercase text-4xl font-bold text-[#FFA200] mx-8">
+            IT'S A VIBE
+          </span>
+          <span className="text-2xl text-black mx-4">✦</span>
+          <span className="font-folklore uppercase text-4xl font-bold text-[#FFA200] mx-8">
+            SKINCARE FOR REBELS
+          </span>
+          <span className="text-2xl text-black mx-4">✦</span>
+          <span className="font-folklore uppercase text-4xl font-bold text-[#FFA200] mx-8">
+            GLOW LOUD
+          </span>
+          <span className="text-2xl text-black mx-4">✦</span>
+          <span className="font-folklore uppercase text-4xl font-bold text-[#FFA200] mx-8">
+            REBEL
+          </span>
+          <span className="font-folklore uppercase text-4xl font-bold text-[#FFA200] mx-8">
+            GLOW LOUD
+          </span>
+          <span className="text-2xl text-black mx-4">✦</span>
+          <span className="font-folklore uppercase text-4xl font-bold text-[#FFA200] mx-8">
+            GOOD SKIN
+          </span>
+          <span className="text-2xl text-black mx-4">✦</span>
+          <span className="font-folklore uppercase text-4xl font-bold text-[#FFA200] mx-8">
+            GOOD MOOD
+          </span>
+          <span className="text-2xl text-black mx-4">✦</span>
+          <span className="font-folklore uppercase text-4xl font-bold text-[#FFA200] mx-8">
+            IT'S A VIBE
+          </span>
+          <span className="text-2xl text-black mx-4">✦</span>
+          <span className="font-folklore uppercase text-4xl font-bold text-[#FFA200] mx-8">
+            SKINCARE FOR REBELS
+          </span>
+          <span className="text-2xl text-black mx-4">✦</span>
+          <span className="font-folklore uppercase text-4xl font-bold text-[#FFA200] mx-8">
+            GLOW LOUD
+          </span>
+          <span className="text-2xl text-black mx-4">✦</span>
+          <span className="font-folklore uppercase text-4xl font-bold text-[#FFA200] mx-8">
+            REBEL
+          </span>
         </div>
       </div>
     </div>
