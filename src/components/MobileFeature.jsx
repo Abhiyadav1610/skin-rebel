@@ -1,6 +1,6 @@
-import React from 'react';
-import hero1 from "../assets/images/hero1.jpg"; // Ensure you have a hero.jpg in the assets folder
-import img1 from '../assets/images/mobile/1.png'
+import React from "react";
+import hero1 from "../assets/images/hero1.jpg";
+import img1 from "../assets/images/mobile/1.png";
 import img2 from "../assets/images/feature/1.png";
 import img3 from "../assets/images/mobile/2.png";
 import img4 from "../assets/images/hero/4.png";
@@ -9,148 +9,74 @@ import img8 from "../assets/images/feature/7.png";
 
 const MobileFeature = () => {
   return (
-    <section
-      style={{
-        height: "781px",
-        backgroundColor: "#fff5ea",
-      }}
-    >
-      <div className="relative">
+    <section className="w-full min-h-[781px] bg-[#fff5ea] flex justify-center">
+      {/* Centered container wrapper for large screens */}
+      <div className="relative w-full max-w-[1440px] h-[781px]">
         {/* Text Content */}
-
-        <div
-          className="absolute"
-          style={{
-            width: "678px",
-            height: "329.15px",
-            top: "257px",
-            left: "65px",
-          }}
-        >
-          <div className="flex ">
-            <div className=" flex flex-row ">
-              <img
-                style={{ width: "58px", height: "58px" }}
-                src={img2}
-                alt=""
-              />
-              <p
-                className="font-ben-brown lowercase"
-                style={{
-                  fontWeight: 400,
-                  fontStyle: "normal",
-                  fontSize: "64px",
-                  lineHeight: "90%",
-                  letterSpacing: "-0.03em",
-                  color: "#8A5A07",
-                  textTransform: "lowercase",
-                }}
-              >
+        <div className="absolute w-[678px] h-[329px] top-[257px] left-[65px]">
+          <div className="flex">
+            <div className="flex flex-row items-center mb-6">
+              <img className="w-[58px] h-[58px] mr-4" src={img2} alt="" />
+              <p className="font-ben-brown lowercase font-normal text-[48px] lg:text-[64px] leading-[90%] tracking-[-0.03em] text-[#8A5A07] lowercase">
                 Some vibes you just have to see
               </p>
             </div>
           </div>
 
-          <h2
-            style={{
-              fontFamily: "Darker Grotesque, sans-serif",
-              fontWeight: "700",
-              style: "bold",
-              fontSize: "42px",
-              lineHeight: "90%",
-              letterSpacing: "-3%",
-            }}
-          >
+          <h2 className="font-['Darker_Grotesque'] font-bold text-[42px] leading-[90%] tracking-[-3%] text-[#1C1B1F] mb-6">
             Skincare that works While
             <br />
             you live your life
           </h2>
 
-          <p
-            className="absolute"
-            style={{
-              top: "150px",
-              fontFamily: "Darker Grotesque, sans-serif",
-              fontWeight: "500",
-              fontSize: "22px",
-              lineHeight: "100%",
-              letterSpacing: "0%",
-            }}
-          >
+          <p className="absolute top-[150px] font-['Darker_Grotesque'] font-medium text-[22px] leading-[100%] tracking-normal text-[#1C1B1F]">
             From inside-out hydration to visible radiance, Skin Rebel gives you
             the tools your skin needs to stay strong and luminous.
           </p>
         </div>
 
-        {/* Image */}
-        <div
-          className="absolute"
-          style={{
-            width: "489px",
-            height: "680px",
-            top: "61px",
-            left: "888px",
-            borderRadius: "300px",
-            border: "1px",
-          }}
-        >
-          <img src={img1} alt="" className="w-full h-full object-cover" />
+        {/* Main Image */}
+        <div className="absolute w-[489px] h-[680px] top-[61px] right-[65px] rounded-[300px] border overflow-hidden">
+          <img
+            src={img1}
+            alt="Mobile feature visual"
+            className="w-full h-full object-cover"
+          />
         </div>
 
-        {/* star section .......................  */}
-
-        <div
-          className="absolute flex flex-col"
-          style={{
-            width: "135.2px",
-            height: "136.01px",
-            top: "189px",
-            left: "701px",
-            opacity: 1,
-          }}
-        >
-          <img src={img4} alt="Hero Visual" />
+        {/* Star section ....................... */}
+        <div className="absolute flex flex-col w-[135px] h-[136px] top-[189px] left-[701px] opacity-100">
+          <img
+            src={img4}
+            alt="Hero Visual"
+            className="w-full h-full object-cover"
+          />
         </div>
-        <div
-          className="absolute flex flex-col"
-          style={{
-            width: "135.2px",
-            height: "136.01px",
-            top: "611px",
-            left: "377px",
-            opacity: 1,
-          }}
-        >
-          <img src={img5} alt="Hero Visual" />
-        </div>
-{/* outer flower ...........................  */}
-      <div
-        className="absolute flex flex-col"
-        style={{
-          width: "91.55px",
-          height: "103.01px",
-          top: "142.37px",
-          left: "58px",
-          opacity: 1,
-        }}
-      >
-        <img src={img8} alt="Hero Visual" />
-      </div>
 
-        {/* cloud section ..............  */}
-        <div
-          className="absolute flex flex-col"
-          style={{
-            width: "260.2px",
-            height: "203.01px",
-            top: "330px",
-            left: "722.7px",
-            border: "4px",
-            // alignmentBaseline:-6.49,
-            opacity: 1,
-          }}
-        >
-          <img src={img3} alt="Hero Visual" />
+        <div className="absolute flex flex-col w-[135px] h-[136px] top-[611px] left-[377px] opacity-100">
+          <img
+            src={img5}
+            alt="Hero Visual"
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+        {/* Outer flower ........................... */}
+        <div className="absolute flex flex-col w-[92px] h-[103px] top-[142px] left-[58px] opacity-100">
+          <img
+            src={img8}
+            alt="Hero Visual"
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+        {/* Cloud section .............. */}
+        <div className="absolute flex flex-col w-[260px] h-[203px] top-[330px] left-[723px]  opacity-100 overflow-hidden">
+          <img
+            src={img3}
+            alt="Hero Visual"
+            className="w-full h-full object-cover"
+          />
         </div>
       </div>
     </section>

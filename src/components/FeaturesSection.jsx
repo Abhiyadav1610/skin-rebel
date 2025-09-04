@@ -9,349 +9,138 @@ import img8 from "../assets/images/feature/7.png";
 
 const FeaturesSection = () => {
   return (
-    <section
-      className="relative w-screen  h-[1757px] mx-auto"
-      style={{
-        backgroundColor: "#FFF9F2",
-        opacity: 1,
-        transform: "rotate(0deg)",
-      }}
-    >
-      {/* Features content will go here */}
-      <div
-        className=" flex flex-col  items-center w-full h-full p-8 "
-        
-      >
-        {/* first section .......  */}
-        <div
-          className="absolute flex flex-col justify-center items-center "
-          style={{
-            top: "55px",
-            // left: "382px",
-            width: "676px",
-            height: "144.15px",
-         
-          }}
-        >
-          <div className=" flex flex-row justify-center">
-            <img style={{ width: "58px", height: "58px" }} src={img1} alt="" />
-            <p
-              className="font-ben-brown lowercase"
-              style={{
-                fontWeight: 400,
-                fontStyle: "normal",
-                fontSize: "64px",
-                lineHeight: "90%",
-                letterSpacing: "-0.03em",
-                color: "#8A5A07",
-                textTransform: "lowercase",
-              }}
-            >
-              The Glow Manifesto
-            </p>
-          </div>
-          
-          <div
-            className=" flex justify-center"
-            style={{ width: "720px", height: "65px" }}
-          >
-            <h1
-              style={{
-                fontFamily: "Darker Grotesque, sans-serif",
-                fontWeight: 600,
-                fontSize: "50px",
-                lineHeight: "90%",
-                letterSpacing: "-3%",
-                color: "#1C1B1F",
-              }}
-            >
-              Glow Science, Rebel Energy
-            </h1>
-          </div>
-        </div>
-
-        {/* second section .............  */}
-        <div
-          className="absolute flex flex-row"
-          style={{
-            width: "659.001953125px",
-            height: "178px",
-            top: "465px",
-            left: "90px",
-            // angle: 0 deg,
-            opacity: 1,
-            gap: "49px",
-           
-          }}
-        >
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <img style={{ width: "59px", height: "59px" }} src={img4} alt="" />
-          </div>
-          <div
-            className="flex flex-col gap-10"
-            style={{
-              width: "545px",
-              height: "58px",
-            }}
-          >
-            <div>
-              <h1
-                style={{
-                  fontWeight: "600",
-                  style: "bold",
-                  fontSize: "44px",
-                  lineHeight: "90%",
-                  letterSpacing: "-3%",
-                }}
-              >
-                Feel It, See It
-              </h1>
-            </div>
-            <div
-              style={{
-                width: "383px",
-                height: "96px",
-              }}
-            >
-              <p
-                style={{
-                  fontWeight: "500",
-                  // style: "medium",
-                  size: "32px",
-                  lineHeight: "100%",
-                }}
-              >
-                Smoother texture, brighter tone, stronger confidence — we’re
-                here for visible wins, not empty promises.
+    <section className="relative w-full min-h-[1757px] bg-[#FFF9F2] flex justify-center">
+      {/* Centered container wrapper for large screens */}
+      <div className="relative w-full max-w-[1440px] h-[1757px]">
+        {/* Features content */}
+        <div className="flex flex-col items-center w-full h-full p-8">
+          {/* first section .......  */}
+          <div className="absolute flex flex-col justify-center items-center top-[55px] left-1/2 transform -translate-x-1/2 w-[676px] h-[144px]">
+            <div className="flex flex-row justify-center items-center">
+              <img className="w-[58px] h-[58px] mr-4" src={img1} alt="" />
+              <p className="font-ben-brown lowercase font-normal text-[64px] leading-[90%] tracking-[-0.03em] text-[#8A5A07] lowercase">
+                The Glow Manifesto
               </p>
             </div>
-          </div>
-        </div>
 
-        {/* third section ....................... */}
-        <div
-          className="absolute"
-          style={{
-            width: "455.77px",
-            height: "460.41px",
-            top: "326px",
-            left: "828.62px",
-         
-          }}
-        >
-          <img src={img3} alt="" />
-        </div>
-
-        {/* fourth section .............  */}
-        <div
-          className="absolute flex flex-row"
-          style={{
-            width: "659.001953125px",
-            height: "178px",
-            top: "921px",
-            left: "690px",
-            // angle: 0 deg,
-            opacity: 1,
-            gap: "49px",
-          }}
-        >
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <img style={{ width: "59px", height: "59px" }} src={img4} alt="" />
-          </div>
-          <div
-            className="flex flex-col gap-10"
-            style={{
-              width: "555px",
-              height: "58px",
-            }}
-          >
-            <div >
-              <h1
-                style={{
-                  fontWeight: "600",
-                  style: "bold",
-                  fontSize: "44px",
-                  lineHeight: "90%",
-                  letterSpacing: "-3%",
-                }}
-              >
-                Skincare with Attitude
+            <div className="flex justify-center w-[720px] h-[65px] mt-4">
+              <h1 className="font-['Darker_Grotesque'] font-semibold text-[50px] leading-[90%] tracking-[-3%] text-[#1C1B1F] text-center">
+                Glow Science, Rebel Energy
               </h1>
             </div>
-            <div
-              style={{
-                width: "fit-content",
-                height: "96px",
-              }}
-            >
-              <p
-                style={{
-                  fontWeight: "500",
-                  // style: "medium",
-                  size: "32px",
-                  lineHeight: "100%",
-                }}
-              >
-                Bold, statement-making products that vibe with your style while
-                working hard behind the scenes.
-              </p>
+          </div>
+
+          {/* second section .............  */}
+          <div className="absolute flex flex-row w-[659px] h-[178px] top-[465px] left-[90px] opacity-100 gap-[49px]">
+            <div className="flex justify-center items-center">
+              <img className="w-[59px] h-[59px]" src={img4} alt="" />
+            </div>
+            <div className="flex flex-col gap-10 w-[545px] h-[58px]">
+              <div>
+                <h1 className="font-semibold text-[44px] leading-[90%] tracking-[-3%]">
+                  Feel It, See It
+                </h1>
+              </div>
+              <div className="w-[383px] h-[96px]">
+                <p className="font-medium text-[32px] leading-[100%]">
+                  Smoother texture, brighter tone, stronger confidence — we're
+                  here for visible wins, not empty promises.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* fivth section ....................... */}
-        <div
-          className="absolute"
-          style={{
-            width: "455.77px",
-            height: "460.41px",
-            top: "761px",
-            left: "152.62px",
-          }}
-        >
-          <img src={img5} alt="" />
-        </div>
-        {/* SIXTH SECTION ...... */}
-        <div
-          className="absolute flex flex-col"
-          style={{
-            width: "260.2px",
-            height: "203.01px",
-            top: "669px",
-            left: "575.7px",
-            border: "4px",
-            // alignmentBaseline:-6.49,
-            opacity: 1,
-          }}
-        >
-          <img src={img6} alt="Hero Visual" />
-        </div>
-        <div
-          className="absolute flex flex-col"
-          style={{
-            width: "146.2px",
-            height: "107.01px",
-            top: "728.68px",
-            left: "636.99px",
-            border: "4px",
-            transform: "rotate(-6.49deg)", // Added rotation
-          }}
-        >
-          <h2
-            className="font-folklore uppercase"
-            style={{
-              width: "400.2px",
-              fontSize: "46px",
-              letterSpacing: "-3%",
-              lineHeight: "100%",
-              color: "white",
-            }}
-          >
-            SKIN <br /> REBEL
-          </h2>
-        </div>
-
-        {/* seventh section .............  */}
-        <div
-          className="absolute flex flex-row"
-          style={{
-            width: "659.001953125px",
-            height: "178px",
-            top: "1340px",
-            left: "100px",
-            // angle: 0 deg,
-            opacity: 1,
-            gap: "49px",
-          }}
-        >
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <img style={{ width: "59px", height: "59px" }} src={img4} alt="" />
+          {/* third section ....................... */}
+          <div className="absolute w-[456px] h-[460px] top-[326px] right-[90px]">
+            <img
+              src={img3}
+              alt=""
+              className="w-full h-full object-cover rounded-lg"
+            />
           </div>
-          <div
-            className="flex flex-col gap-10"
-            style={{
-              width: "545px",
-              height: "58px",
-            }}
-          >
-            <div >
-              <h1
-                style={{
-                  fontWeight: "600",
-                  style: "bold",
-                  fontSize: "44px",
-                  lineHeight: "90%",
-                  letterSpacing: "-3%",
-                }}
-              >
-                Clinically Backed Glow
-              </h1>
+
+          {/* fourth section .............  */}
+          <div className="absolute flex flex-row w-[659px] h-[178px] top-[921px] right-[90px] opacity-100 gap-[49px]">
+            <div className="flex justify-center items-center">
+              <img className="w-[59px] h-[59px]" src={img4} alt="" />
             </div>
-            <div
-              style={{
-                width: "383px",
-                height: "96px",
-              }}
-            >
-              <p
-                style={{
-                  fontWeight: "500",
-                  // style: "medium",
-                  size: "32px",
-                  lineHeight: "100%",
-                }}
-              >
-                Science-first formulas that actually deliver — Collagen & NAD+
-                built for results you can see and feel.
-              </p>
+            <div className="flex flex-col gap-10 w-[555px] h-[58px]">
+              <div>
+                <h1 className="font-semibold text-[44px] leading-[90%] tracking-[-3%]">
+                  Skincare with Attitude
+                </h1>
+              </div>
+              <div className="w-fit h-[96px]">
+                <p className="font-medium text-[32px] leading-[100%]">
+                  Bold, statement-making products that vibe with your style
+                  while working hard behind the scenes.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* eight section ....................... */}
-        <div
-          className="absolute"
-          style={{
-            width: "455.77px",
-            height: "460.41px",
-            top: "1194.41px",
-            left: "794px",
-          }}
-        >
-          <img src={img7} alt="" />
-        </div>
+          {/* fifth section ....................... */}
+          <div className="absolute w-[456px] h-[460px] top-[761px] left-[90px]">
+            <img
+              src={img5}
+              alt=""
+              className="w-full h-full object-cover rounded-lg"
+            />
+          </div>
 
-        {/* ninth section ........ */}
-         <div
-                  className="absolute flex flex-col"
-                  style={{
-                    width: "91.2px",
-                    height: "103.01px",
-                    top: "1187px",
-                    left: "663px",
-                    opacity: 1,
-                  }}
-                >
-                  <img src={img8} alt="Hero Visual" />
-                </div>
+          {/* SIXTH SECTION ...... */}
+          <div className="absolute flex flex-col w-[260px] h-[203px] top-[669px] left-1/2 transform -translate-x-1/2  opacity-100 overflow-hidden">
+            <img
+              src={img6}
+              alt="Hero Visual"
+              className="w-full h-full object-cover"
+            />
+          </div>
+
+          <div className="absolute flex flex-col top-[729px]  transform -translate-x-1/2 translate-x-[30px] rotate-[6.49deg] overflow-hidden">
+            <h2 className="font-folklore uppercase text-[46px] tracking-[-3%] leading-[100%] text-white whitespace-nowrap px-2 py-1">
+              SKIN <br /> REBEL
+            </h2>
+          </div>
+
+          {/* seventh section .............  */}
+          <div className="absolute flex flex-row w-[659px] h-[178px] top-[1340px] left-[90px] opacity-100 gap-[49px]">
+            <div className="flex justify-center items-center">
+              <img className="w-[59px] h-[59px]" src={img4} alt="" />
+            </div>
+            <div className="flex flex-col gap-10 w-[545px] h-[58px]">
+              <div>
+                <h1 className="font-semibold text-[44px] leading-[90%] tracking-[-3%]">
+                  Clinically Backed Glow
+                </h1>
+              </div>
+              <div className="w-[383px] h-[96px]">
+                <p className="font-medium text-[32px] leading-[100%]">
+                  Science-first formulas that actually deliver — Collagen & NAD+
+                  built for results you can see and feel.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* eighth section ....................... */}
+          <div className="absolute w-[456px] h-[460px] top-[1194px] right-[90px]">
+            <img
+              src={img7}
+              alt=""
+              className="w-full h-full object-cover rounded-lg"
+            />
+          </div>
+
+          {/* ninth section ........ */}
+          <div className="absolute flex flex-col w-[91px] h-[103px] top-[1187px] left-1/2 transform -translate-x-1/2 translate-x-[-100px] opacity-100">
+            <img
+              src={img8}
+              alt="Hero Visual"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>
       </div>
     </section>
   );

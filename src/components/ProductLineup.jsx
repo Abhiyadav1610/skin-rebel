@@ -9,198 +9,90 @@ import img7 from "../assets/images/productlineup/1.png";
 import img8 from "../assets/images/feature/7.png";
 
 const ProductLineup = () => {
+  // Product data array to avoid repetition
+  const products = [
+    {
+      name: "Collagen Glow Elixir",
+      description: "Hydrate from within, glow from outside.",
+    },
+    { name: "Adaptogen Elixir", description: "Find your calm in the chaos." },
+    { name: "NAD+ Renewal Serum", description: "Youth meets science." },
+    {
+      name: "Vitamin C Brightener",
+      description: "Brighten your day, brighten your skin.",
+    },
+  ];
+
   return (
-    <div
-      className=" relative flex justify-center items-center  h-[925px]"
-      style={{
-        backgroundColor: "#FFAFCD",
-        opacity: 1,
-        transform: "rotate(0deg)",
-      }}
-    >
-      {/* upper content ......... */}
-
-      <div
-        className="absolute flex flex-col"
-        style={{
-          width: "898px",
-          height: "76px",
-          top: "74px",
-          left: "261px",
-          opacity: 1,
-          gap: "24px",
-          transform: "rotate(0deg)",
-        }}
-      >
-        <h1
-          className="font-folklore uppercase"
-          style={{
-            fontWeight: 400,
-            fontSize: "85px",
-            lineHeight: "90%",
-            letterSpacing: "0%",
-            color: "#FF4930",
-          }}
-        >
-          {/* Skincare
-          <br />
-          with an
-          <br />
-          Attitude. */}
-          The Rebel Line-Up
-        </h1>
-      </div>
-
-      {/* Inner Content Container */}
-
-      <div
-        className="absolute flex flex justify-center items-center"
-        style={{
-          width: "1300px",
-          display: "flex",
-          height: "580px",
-          top: "217px",
-          // left: "64px",
-          opacity: 1,
-          borderRadius: "64px",
-          backgroundColor: "#FFF9F2",
-          transform: "rotate(0deg)",
-        }}
-      >
-        {/* inner text upside ....... */}
-
-        <div
-          className="absolute"
-          style={{
-            width: "327px",
-            height: "58px",
-            top: "14px",
-            // left: "429px",
-          }}
-        >
-          <p
-            className="font-ben-brown lowercase"
-            style={{
-              fontWeight: 400,
-              fontStyle: "normal",
-              fontSize: "64px",
-              lineHeight: "90%",
-              letterSpacing: "-0.03em",
-              color: "#8A5A07",
-              textTransform: "lowercase",
-            }}
-          >
-            Your skins new inner circle
-          </p>
+    <div className="relative w-full min-h-[925px] bg-[#FFAFCD] flex justify-center items-center">
+      {/* Centered container wrapper for large screens */}
+      <div className="relative w-full max-w-[1440px] h-[925px]">
+        {/* Upper content ......... */}
+        <div className="absolute flex flex-col w-[898px] h-[76px] top-[74px] left-1/2 transform -translate-x-1/2 opacity-100 gap-6">
+          <h1 className="font-folklore uppercase font-normal text-[85px] leading-[90%] tracking-normal text-[#FF4930] text-center">
+            The Rebel Line-Up
+          </h1>
         </div>
 
-        {/* images of product.........  */}
-        <div
-          className="flex flex-row "
-          style={{
-            height: "fit-content",
-            gap: "40px",
-          }}
-        >
-          <div>
-            <div>
-              <img src={img7} alt="" />
-            </div>
-            <div className=" flex flex-col     items-center">
-              <h1 style={{ style: "bold", fontWeight: "700" }}>
-                Adaptogen Elixir
-              </h1>
-              <p>Find your calm in the chaos.</p>
-            </div>
+        {/* Inner Content Container */}
+        <div className="absolute flex justify-center items-center w-[1300px] h-[580px] top-[217px] left-1/2 transform -translate-x-1/2 opacity-100 rounded-[64px] bg-[#FFF9F2]">
+          {/* Inner text upside ....... */}
+          <div className="absolute w-[327px] h-[58px] top-[14px] left-1/2 transform -translate-x-1/2">
+            <p className="font-ben-brown lowercase font-normal text-[48px] lg:text-[64px] leading-[90%] tracking-[-0.03em] text-[#8A5A07] text-center">
+              Your skins new inner circle
+            </p>
           </div>
-          <div>
-            <div>
-              <img src={img7} alt="" />
-            </div>
-            <div className=" flex flex-col     items-center">
-              <h1 style={{ style: "bold", fontWeight: "700" }}>
-                Adaptogen Elixir
-              </h1>
-              <p>Find your calm in the chaos.</p>
-            </div>
-          </div>
-          <div>
-            <div>
-              <img src={img7} alt="" />
-            </div>
-            <div className=" flex flex-col     items-center">
-              <h1 style={{ style: "bold", fontWeight: "700" }}>
-                Adaptogen Elixir
-              </h1>
-              <p>Find your calm in the chaos.</p>
-            </div>
-          </div>{" "}
-          <div>
-            <div>
-              <img src={img7} alt="" />
-            </div>
-            <div className=" flex flex-col     items-center">
-              <h1 style={{ style: "bold", fontWeight: "700" }}>
-                Adaptogen Elixir
-              </h1>
-              <p>Find your calm in the chaos.</p>
-            </div>
+
+          {/* Images of products ......... */}
+          <div className="flex flex-row gap-[40px] h-fit mt-16">
+            {products.map((product, idx) => (
+              <div
+                key={idx}
+                className="flex flex-col items-center max-w-[200px]"
+              >
+                <div className="mb-4">
+                  <img
+                    src={img7}
+                    alt={`${product.name}`}
+                    className="w-full h-full object-contain transition-transform hover:scale-105"
+                  />
+                </div>
+                <div className="flex flex-col items-center text-center">
+                  <h1 className="font-bold text-[18px] leading-[110%] mb-2 text-[#1C1B1F]">
+                    {product.name}
+                  </h1>
+                  <p className="text-[14px] leading-[120%] text-gray-600">
+                    {product.description}
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
-      </div>
 
-      {/* outer cloud .................  */}
-      <div
-        className="absolute flex flex-col"
-        style={{
-          width: "260.2px",
-          height: "203.01px",
-          top: "86px",
-          left: "1128.7px",
-          border: "4px",
-          // alignmentBaseline:-6.49,
-          opacity: 1,
-        }}
-      >
-        <img src={img6} alt="Hero Visual" />
-      </div>
-      <div
-        className="absolute flex flex-col"
-        style={{
-          width: "146.2px",
-          height: "107.01px",
-          top: "145px",
-          left: "1189.7px",
-          border: "4px",
-          transform: "rotate(6.49deg)", // Added rotation
-        }}
-      >
-        <h2
-          className="font-folklore uppercase"
-          style={{
-            width: "400.2px",
-            fontSize: "46px",
-            letterSpacing: "-3%",
-            lineHeight: "100%",
-            color: "white",
-          }}
-        >
-          SKIN <br /> REBEL
-        </h2>
-      </div>
+        {/* Outer cloud ................. */}
+        <div className="absolute flex flex-col w-[260px] h-[203px] top-[106px] right-[90px]  opacity-100 overflow-hidden">
+          <img
+            src={img6}
+            alt="Hero Visual"
+            className="w-full h-full object-cover"
+          />
+        </div>
 
-      {/* outer flower ...........................  */}
-      <div
-        className="absolute flex flex-col"
-        style={{
-          width: "91.55px",
-          height: "103.01px",
-          top: "160.37px",
-          left: "75px",
-          opacity: 1,
-        }}
-      >
-        <img src={img8} alt="Hero Visual" />
+        <div className="absolute flex flex-col top-[145px] right-[120px]  rotate-[6.49deg] overflow-hidden">
+          <h2 className="font-folklore uppercase text-[46px] tracking-[-3%] leading-[100%] text-white whitespace-nowrap px-2 py-1">
+            SKIN <br /> REBEL
+          </h2>
+        </div>
+
+        {/* Outer flower ........................... */}
+        <div className="absolute flex flex-col w-[92px] h-[103px] top-[160px] left-[75px] opacity-100">
+          <img
+            src={img8}
+            alt="Hero Visual"
+            className="w-full h-full object-cover"
+          />
+        </div>
       </div>
     </div>
   );

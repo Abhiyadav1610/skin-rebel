@@ -12,26 +12,12 @@ const Header = () => {
   };
 
   return (
-    <header
-      className="sticky top-0 z-50 w-full h-[90px]"
-      style={{ backgroundColor: "#FFF9F2" }}
-    >
+    <header className="sticky top-0 z-50 w-full h-[90px] bg-[#FFF9F2]">
       {/* Content container */}
       <div className="max-w-[1440px] mx-auto w-full h-full flex justify-between items-center px-4 sm:px-8 lg:px-16">
         {/* Left Side - Text Logo with Real Folklore Font */}
         <div className="flex items-center">
-          <span
-            className="flex items-center justify-center font-folklore tracking-tight px-2"
-            style={{
-              fontWeight: 400,
-              fontSize: "24px",
-              lineHeight: "28px",
-              letterSpacing: "-0.02em",
-              color: "#FF4930",
-              height: "28px",
-              whiteSpace: "nowrap",
-            }}
-          >
+          <span className="flex items-center justify-center font-folklore tracking-[-0.02em] px-2 font-normal text-[24px] leading-[28px] text-[#FF4930] h-[28px] whitespace-nowrap">
             SKIN REBEL
           </span>
         </div>
@@ -40,43 +26,37 @@ const Header = () => {
         <nav className="hidden lg:flex gap-6 xl:gap-8">
           <a
             href="#shop"
-            className="text-[16px] lg:text-[18px] leading-[100%] tracking-[-0.03em] text-gray-900 hover:text-rebel-orange transition-colors"
-            style={{ fontWeight: 550 }}
+            className="text-[16px] lg:text-[18px] leading-[100%] tracking-[-0.03em] text-gray-900 hover:text-[#FF4930] transition-colors font-medium"
           >
             Shop
           </a>
           <a
             href="#about"
-            className="text-[16px] lg:text-[18px] leading-[100%] tracking-[-0.03em] text-gray-900 hover:text-rebel-orange transition-colors"
-            style={{ fontWeight: 550 }}
+            className="text-[16px] lg:text-[18px] leading-[100%] tracking-[-0.03em] text-gray-900 hover:text-[#FF4930] transition-colors font-medium"
           >
             About
           </a>
           <a
             href="#benefits"
-            className="text-[16px] lg:text-[18px] leading-[100%] tracking-[-0.03em] text-gray-900 hover:text-rebel-orange transition-colors"
-            style={{ fontWeight: 550 }}
+            className="text-[16px] lg:text-[18px] leading-[100%] tracking-[-0.03em] text-gray-900 hover:text-[#FF4930] transition-colors font-medium"
           >
             Benefits
           </a>
           <a
             href="#reviews"
-            className="text-[16px] lg:text-[18px] leading-[100%] tracking-[-0.03em] text-gray-900 hover:text-rebel-orange transition-colors"
-            style={{ fontWeight: 550 }}
+            className="text-[16px] lg:text-[18px] leading-[100%] tracking-[-0.03em] text-gray-900 hover:text-[#FF4930] transition-colors font-medium"
           >
             Reviews
           </a>
           <a
             href="#blog"
-            className="text-[16px] lg:text-[18px] leading-[100%] tracking-[-0.03em] text-gray-900 hover:text-rebel-orange transition-colors"
-            style={{ fontWeight: 550 }}
+            className="text-[16px] lg:text-[18px] leading-[100%] tracking-[-0.03em] text-gray-900 hover:text-[#FF4930] transition-colors font-medium"
           >
             Blog
           </a>
           <a
             href="#contact"
-            className="text-[16px] lg:text-[18px] leading-[100%] tracking-[-0.03em] text-gray-900 hover:text-rebel-orange transition-colors"
-            style={{ fontWeight: 550 }}
+            className="text-[16px] lg:text-[18px] leading-[100%] tracking-[-0.03em] text-gray-900 hover:text-[#FF4930] transition-colors font-medium"
           >
             Contact
           </a>
@@ -100,10 +80,7 @@ const Header = () => {
           </div>
 
           {/* Shop Now Button */}
-          <button
-            className="w-[140px] h-[45px] lg:w-[163px] lg:h-[50px] px-[8px] lg:px-[10px] py-[12px] lg:py-[16px] rounded-[100px] text-white font-semibold text-sm lg:text-base hover:opacity-90 transition-opacity flex items-center justify-center ml-2"
-            style={{ backgroundColor: "#FF4930", gap: "8px" }}
-          >
+          <button className="w-[140px] h-[45px] lg:w-[163px] lg:h-[50px] px-[8px] lg:px-[10px] py-[12px] lg:py-[16px] rounded-[100px] text-white font-semibold text-sm lg:text-base hover:opacity-90 transition-opacity flex items-center justify-center ml-2 bg-[#FF4930] gap-2">
             Shop Now
           </button>
         </div>
@@ -160,42 +137,42 @@ const Header = () => {
           <nav className="flex flex-col space-y-3">
             <a
               href="#shop"
-              className="text-lg font-semibold text-gray-900 hover:text-rebel-orange transition-colors py-2"
+              className="text-lg font-semibold text-gray-900 hover:text-[#FF4930] transition-colors py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Shop
             </a>
             <a
               href="#about"
-              className="text-lg font-semibold text-gray-900 hover:text-rebel-orange transition-colors py-2"
+              className="text-lg font-semibold text-gray-900 hover:text-[#FF4930] transition-colors py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               About
             </a>
             <a
               href="#benefits"
-              className="text-lg font-semibold text-gray-900 hover:text-rebel-orange transition-colors py-2"
+              className="text-lg font-semibold text-gray-900 hover:text-[#FF4930] transition-colors py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Benefits
             </a>
             <a
               href="#reviews"
-              className="text-lg font-semibold text-gray-900 hover:text-rebel-orange transition-colors py-2"
+              className="text-lg font-semibold text-gray-900 hover:text-[#FF4930] transition-colors py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Reviews
             </a>
             <a
               href="#blog"
-              className="text-lg font-semibold text-gray-900 hover:text-rebel-orange transition-colors py-2"
+              className="text-lg font-semibold text-gray-900 hover:text-[#FF4930] transition-colors py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Blog
             </a>
             <a
               href="#contact"
-              className="text-lg font-semibold text-gray-900 hover:text-rebel-orange transition-colors py-2"
+              className="text-lg font-semibold text-gray-900 hover:text-[#FF4930] transition-colors py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Contact
@@ -210,8 +187,7 @@ const Header = () => {
 
             {/* Mobile Shop Now Button */}
             <button
-              className="flex-1 h-[45px] rounded-full text-white font-semibold text-base hover:opacity-90 transition-opacity"
-              style={{ backgroundColor: "#FF4930", padding: "12px 16px" }}
+              className="flex-1 h-[45px] rounded-full text-white font-semibold text-base hover:opacity-90 transition-opacity bg-[#FF4930] px-4 py-3"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Shop Now
