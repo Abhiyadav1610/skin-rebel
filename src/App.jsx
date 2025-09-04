@@ -14,12 +14,12 @@ function App() {
       <Header />
       <HeroSection />
       <FeaturesSection />
-      {/*
       <ProductLineup />
       <MobileFeature />
       <PromotionalSection/>
       <TestimonialSection/>
       <ProductView/>
+      {/*
       <Footer/> */}
     </div>
   );
