@@ -10,7 +10,7 @@ const HeroSection = () => {
   return (
     <div className="relative flex flex-col justify-center items-center h-[925px] min-h-screen bg-[#FFAFCD] w-full max-w-full overflow-x-hidden">
       {/* Inner Content Container */}
-      <div className="relative w-full max-w-[1500px] min-h-[700px] sm:min-h-[800px] lg:min-h-[690px] rounded-[32px] sm:rounded-[48px] lg:rounded-[64px] bg-[#FFF9F2] overflow-hidden mx-4 sm:mx-6 -mt-16 lg:-mt-20">
+      <div className="relative w-full max-w-[1400px] min-h-[700px] sm:min-h-[800px] lg:min-h-[690px] rounded-[32px] sm:rounded-[48px] lg:rounded-[64px] bg-[#FFF9F2] overflow-hidden mx-4 sm:mx-6 -mt-16 lg:-mt-20">
         {/* Mobile Layout */}
         <div className="block lg:hidden">
           <div className="flex flex-col items-center text-center px-6 sm:px-8 pt-8 sm:pt-12">
