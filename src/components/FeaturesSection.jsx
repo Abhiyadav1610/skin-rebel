@@ -16,47 +16,47 @@ const FeaturesSection = () => {
         <div className="flex flex-col items-center text-center mb-12 sm:mb-16 xl:absolute xl:top-[55px] xl:left-1/2 xl:transform xl:-translate-x-1/2 xl:w-[676px] xl:h-[144px] xl:mb-0">
           <div className="flex flex-row justify-center items-center mb-4">
             <img
-              className="w-12 h-12 sm:w-14 sm:h-14 xl:w-[58px] xl:h-[58px] mr-4"
+              className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 xl:w-[58px] xl:h-[58px] mr-3 sm:mr-4"
               src={img1}
               alt=""
             />
-            <p className="font-ben-brown lowercase font-normal text-[32px] sm:text-[48px] xl:text-[64px] leading-[90%] tracking-[-0.03em] text-[#8A5A07]">
+            <p className="font-ben-brown lowercase font-normal text-[20px] sm:text-[28px] md:text-[36px] lg:text-[48px] xl:text-[64px] leading-[90%] tracking-[-0.03em] text-[#8A5A07]">
               The Glow Manifesto
             </p>
           </div>
-          <div className="flex justify-center w-[720px] h-[65px] mt-4">
-            <h1 className="font-darker-grotesque font-bold text-[72px] leading-[90%] tracking-[-0.03em] text-[#1C1B1F] text-center opacity-100">
+          <div className="flex justify-center max-w-full xl:w-[720px] xl:h-[65px] mt-4">
+            <h1 className="font-darker-grotesque font-bold text-[28px] sm:text-[36px] md:text-[48px] lg:text-[56px] xl:text-[72px] leading-[90%] tracking-[-0.03em] text-[#1C1B1F] text-center opacity-100">
               Glow Science, Rebel Energy
             </h1>
           </div>
         </div>
 
         {/* Mobile and Tablet Layout - Stacked vertically up to 1279px */}
-        <div className="block xl:hidden space-y-16 sm:space-y-20 lg:space-y-24">
+        <div className="block xl:hidden space-y-12 sm:space-y-16 lg:space-y-20">
           {/* Feature 1 - Feel It, See It */}
           <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12">
-            <div className="w-full max-w-[350px] mx-auto lg:max-w-[400px] lg:mx-0 lg:flex-1">
+            <div className="w-full max-w-[300px] sm:max-w-[350px] mx-auto lg:max-w-[400px] lg:mx-0 lg:flex-1">
               <img
                 src={img3}
                 alt=""
-                className="w-full h-[300px] lg:h-[350px] object-cover rounded-lg mb-6 lg:mb-0"
+                className="w-full h-[250px] sm:h-[300px] lg:h-[350px] object-cover rounded-lg mb-6 lg:mb-0"
               />
             </div>
-            <div className="flex flex-col items-center lg:items-start text-center lg:text-left lg:flex-1">
+            <div className="flex flex-col items-center lg:items-start text-center lg:text-left lg:flex-1 px-4">
               <div className="flex items-center mb-4">
                 <img
-                  className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 mr-4"
+                  className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 mr-3"
                   src={img4}
                   alt=""
                 />
               </div>
-              <div className="w-[516px] h-[58px] mb-4">
-                <h2 className="font-darker-grotesque font-bold text-[64px] leading-[90%] tracking-[-0.03em] text-[#1C1B1F] opacity-100">
+              <div className="mb-4 max-w-full">
+                <h2 className="font-darker-grotesque font-bold text-[24px] sm:text-[32px] md:text-[40px] lg:text-[48px] xl:text-[64px] leading-[90%] tracking-[-0.03em] text-[#1C1B1F] opacity-100">
                   Feel It, See It
                 </h2>
               </div>
-              <div className="w-[583px] h-[96px]">
-                <p className="font-darker-grotesque font-medium text-[32px] leading-[100%] tracking-normal text-[#1C1B1F] opacity-100">
+              <div className="max-w-full">
+                <p className="font-darker-grotesque font-medium text-[16px] sm:text-[18px] md:text-[20px] lg:text-[24px] xl:text-[32px] leading-[100%] tracking-normal text-[#1C1B1F] opacity-100">
                   Smoother texture, brighter tone, stronger confidence — we're
                   here for visible wins, not empty promises.
                 </p>
@@ -66,28 +66,28 @@ const FeaturesSection = () => {
 
           {/* Feature 2 - Skincare with Attitude */}
           <div className="flex flex-col lg:flex-row-reverse lg:items-center lg:gap-12">
-            <div className="w-full max-w-[350px] mx-auto lg:max-w-[400px] lg:mx-0 lg:flex-1">
+            <div className="w-full max-w-[300px] sm:max-w-[350px] mx-auto lg:max-w-[400px] lg:mx-0 lg:flex-1">
               <img
                 src={img5}
                 alt=""
-                className="w-full h-[300px] lg:h-[350px] object-cover rounded-lg mb-6 lg:mb-0"
+                className="w-full h-[250px] sm:h-[300px] lg:h-[350px] object-cover rounded-lg mb-6 lg:mb-0"
               />
             </div>
-            <div className="flex flex-col items-center lg:items-start text-center lg:text-left lg:flex-1">
+            <div className="flex flex-col items-center lg:items-start text-center lg:text-left lg:flex-1 px-4">
               <div className="flex items-center mb-4">
                 <img
-                  className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 mr-4"
+                  className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 mr-3"
                   src={img4}
                   alt=""
                 />
               </div>
-              <div className="w-[516px] h-[58px] mb-4">
-                <h2 className="font-darker-grotesque font-bold text-[64px] leading-[90%] tracking-[-0.03em] text-[#1C1B1F] opacity-100">
+              <div className="mb-4 max-w-full">
+                <h2 className="font-darker-grotesque font-bold text-[24px] sm:text-[32px] md:text-[40px] lg:text-[48px] xl:text-[64px] leading-[90%] tracking-[-0.03em] text-[#1C1B1F] opacity-100">
                   Skincare with Attitude
                 </h2>
               </div>
-              <div className="w-[583px] h-[96px]">
-                <p className="font-darker-grotesque font-medium text-[32px] leading-[100%] tracking-normal text-[#1C1B1F] opacity-100">
+              <div className="max-w-full">
+                <p className="font-darker-grotesque font-medium text-[16px] sm:text-[18px] md:text-[20px] lg:text-[24px] xl:text-[32px] leading-[100%] tracking-normal text-[#1C1B1F] opacity-100">
                   Bold, statement-making products that vibe with your style
                   while working hard behind the scenes.
                 </p>
@@ -95,46 +95,32 @@ const FeaturesSection = () => {
             </div>
           </div>
 
-          {/* Central Decorative Element - Fixed for mobile/tablet to show full cloud */}
-          <div className="flex justify-center items-center py-12">
-            <div className="relative w-[280px] sm:w-[320px] lg:w-[360px] p-4">
-              <img
-                src={img6}
-                alt="Decorative"
-                className="w-full h-auto object-contain"
-              />
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rotate-[6.49deg] z-10">
-                <h2 className="font-folklore uppercase text-[24px] sm:text-[32px] lg:text-[38px] tracking-[-3%] leading-[100%] text-white whitespace-nowrap px-2 py-1 text-center">
-                  SKIN <br /> REBEL
-                </h2>
-              </div>
-            </div>
-          </div>
+          {/* REMOVED: Central Decorative Element (cloud with SKIN REBEL text) for mobile/tablet */}
 
           {/* Feature 3 - Clinically Backed Glow */}
           <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12">
-            <div className="w-full max-w-[350px] mx-auto lg:max-w-[400px] lg:mx-0 lg:flex-1">
+            <div className="w-full max-w-[300px] sm:max-w-[350px] mx-auto lg:max-w-[400px] lg:mx-0 lg:flex-1">
               <img
                 src={img7}
                 alt=""
-                className="w-full h-[300px] lg:h-[350px] object-cover rounded-lg mb-6 lg:mb-0"
+                className="w-full h-[250px] sm:h-[300px] lg:h-[350px] object-cover rounded-lg mb-6 lg:mb-0"
               />
             </div>
-            <div className="flex flex-col items-center lg:items-start text-center lg:text-left lg:flex-1">
+            <div className="flex flex-col items-center lg:items-start text-center lg:text-left lg:flex-1 px-4">
               <div className="flex items-center mb-4">
                 <img
-                  className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 mr-4"
+                  className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 mr-3"
                   src={img4}
                   alt=""
                 />
               </div>
-              <div className="w-[516px] h-[58px] mb-4">
-                <h2 className="font-darker-grotesque font-bold text-[64px] leading-[90%] tracking-[-0.03em] text-[#1C1B1F] opacity-100">
+              <div className="mb-4 max-w-full">
+                <h2 className="font-darker-grotesque font-bold text-[24px] sm:text-[32px] md:text-[40px] lg:text-[48px] xl:text-[64px] leading-[90%] tracking-[-0.03em] text-[#1C1B1F] opacity-100">
                   Clinically Backed Glow
                 </h2>
               </div>
-              <div className="w-[583px] h-[96px]">
-                <p className="font-darker-grotesque font-medium text-[32px] leading-[100%] tracking-normal text-[#1C1B1F] opacity-100">
+              <div className="max-w-full">
+                <p className="font-darker-grotesque font-medium text-[16px] sm:text-[18px] md:text-[20px] lg:text-[24px] xl:text-[32px] leading-[100%] tracking-normal text-[#1C1B1F] opacity-100">
                   Science-first formulas that actually deliver — Collagen & NAD+
                   built for results you can see and feel.
                 </p>
@@ -147,7 +133,7 @@ const FeaturesSection = () => {
             <img
               src={img8}
               alt="Decorative"
-              className="w-[91px] h-[103px] object-cover"
+              className="w-[70px] h-[80px] sm:w-[80px] sm:h-[90px] lg:w-[91px] lg:h-[103px] object-cover"
             />
           </div>
         </div>
@@ -212,7 +198,7 @@ const FeaturesSection = () => {
             />
           </div>
 
-          {/* Sixth section - Central decorative - Fixed for desktop to show full cloud */}
+          {/* Sixth section - Central decorative - KEPT for desktop only */}
           <div className="absolute w-[320px] top-[640px] left-1/2 transform -translate-x-1/2 opacity-100">
             <div className="relative w-full p-6">
               <img

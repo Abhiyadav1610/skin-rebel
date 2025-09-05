@@ -153,61 +153,87 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Bottom Scrolling Banner */}
-      <div className="absolute bottom-0 w-full overflow-hidden py-4 bg-[#FFF9F2] ">
-        <div className="flex animate-scroll whitespace-nowrap">
-          <span className="font-folklore uppercase text-4xl font-bold text-[#FFA200] mx-8">
+      {/* Bottom Scrolling Banner - Fixed overlap issue */}
+      <div className="absolute bottom-0 w-full overflow-hidden py-4 bg-[#FFF9F2]">
+        <div className="flex animate-scroll whitespace-nowrap items-center gap-8">
+          <span className="font-folklore uppercase text-[24px] font-normal leading-[100%] tracking-[-0.01em] text-[#FFA200] inline-flex items-center justify-center min-w-[151px] h-[28px] px-4 flex-shrink-0">
             GLOW LOUD
           </span>
-          <span className="text-2xl text-black mx-4">✦</span>
-          <span className="font-folklore uppercase text-4xl font-bold text-[#FFA200] mx-8">
+          <span className="inline-flex items-center justify-center w-[32px] h-[36px] text-[28px] leading-[28px] text-[#26224D] flex-shrink-0">
+            ✦
+          </span>
+          <span className="font-folklore uppercase text-[24px] font-normal leading-[100%] tracking-[-0.01em] text-[#FFA200] inline-flex items-center justify-center min-w-[151px] h-[28px] px-4 flex-shrink-0">
             GOOD SKIN
           </span>
-          <span className="text-2xl text-black mx-4">✦</span>
-          <span className="font-folklore uppercase text-4xl font-bold text-[#FFA200] mx-8">
+          <span className="inline-flex items-center justify-center w-[32px] h-[36px] text-[28px] leading-[28px] text-[#26224D] flex-shrink-0">
+            ✦
+          </span>
+          <span className="font-folklore uppercase text-[24px] font-normal leading-[100%] tracking-[-0.01em] text-[#FFA200] inline-flex items-center justify-center min-w-[151px] h-[28px] px-4 flex-shrink-0">
             GOOD MOOD
           </span>
-          <span className="text-2xl text-black mx-4">✦</span>
-          <span className="font-folklore uppercase text-4xl font-bold text-[#FFA200] mx-8">
-            IT'S A VIBE
+          <span className="inline-flex items-center justify-center w-[32px] h-[36px] text-[28px] leading-[28px] text-[#26224D] flex-shrink-0">
+            ✦
           </span>
-          <span className="text-2xl text-black mx-4">✦</span>
-          <span className="font-folklore uppercase text-4xl font-bold text-[#FFA200] mx-8">
+          <span className="font-folklore uppercase text-[24px] font-normal leading-[100%] tracking-[-0.01em] text-[#FFA200] inline-flex items-center justify-center min-w-[151px] h-[28px] px-4 flex-shrink-0">
+            ITS A VIBE
+          </span>
+          <span className="inline-flex items-center justify-center w-[32px] h-[36px] text-[28px] leading-[28px] text-[#26224D] flex-shrink-0">
+            ✦
+          </span>
+          <span className="font-folklore uppercase text-[24px] font-normal leading-[100%] tracking-[-0.01em] text-[#FFA200] inline-flex items-center justify-center min-w-[220px] h-[28px] px-4 flex-shrink-0">
             SKINCARE FOR REBELS
           </span>
-          <span className="text-2xl text-black mx-4">✦</span>
-          <span className="font-folklore uppercase text-4xl font-bold text-[#FFA200] mx-8">
+          <span className="inline-flex items-center justify-center w-[32px] h-[36px] text-[28px] leading-[28px] text-[#26224D] flex-shrink-0">
+            ✦
+          </span>
+          <span className="font-folklore uppercase text-[24px] font-normal leading-[100%] tracking-[-0.01em] text-[#FFA200] inline-flex items-center justify-center min-w-[151px] h-[28px] px-4 flex-shrink-0">
             GLOW LOUD
           </span>
-          <span className="text-2xl text-black mx-4">✦</span>
-          <span className="font-folklore uppercase text-4xl font-bold text-[#FFA200] mx-8">
+          <span className="inline-flex items-center justify-center w-[32px] h-[36px] text-[28px] leading-[28px] text-[#26224D] flex-shrink-0">
+            ✦
+          </span>
+          <span className="font-folklore uppercase text-[24px] font-normal leading-[100%] tracking-[-0.01em] text-[#FFA200] inline-flex items-center justify-center min-w-[151px] h-[28px] px-4 flex-shrink-0">
             REBEL
           </span>
-          <span className="font-folklore uppercase text-4xl font-bold text-[#FFA200] mx-8">
+
+          {/* Duplicate sequence for seamless scroll */}
+          <span className="font-folklore uppercase text-[24px] font-normal leading-[100%] tracking-[-0.01em] text-[#FFA200] inline-flex items-center justify-center min-w-[151px] h-[28px] px-4 flex-shrink-0">
             GLOW LOUD
           </span>
-          <span className="text-2xl text-black mx-4">✦</span>
-          <span className="font-folklore uppercase text-4xl font-bold text-[#FFA200] mx-8">
+          <span className="inline-flex items-center justify-center w-[32px] h-[36px] text-[28px] leading-[28px] text-[#26224D] flex-shrink-0">
+            ✦
+          </span>
+          <span className="font-folklore uppercase text-[24px] font-normal leading-[100%] tracking-[-0.01em] text-[#FFA200] inline-flex items-center justify-center min-w-[151px] h-[28px] px-4 flex-shrink-0">
             GOOD SKIN
           </span>
-          <span className="text-2xl text-black mx-4">✦</span>
-          <span className="font-folklore uppercase text-4xl font-bold text-[#FFA200] mx-8">
+          <span className="inline-flex items-center justify-center w-[32px] h-[36px] text-[28px] leading-[28px] text-[#26224D] flex-shrink-0">
+            ✦
+          </span>
+          <span className="font-folklore uppercase text-[24px] font-normal leading-[100%] tracking-[-0.01em] text-[#FFA200] inline-flex items-center justify-center min-w-[151px] h-[28px] px-4 flex-shrink-0">
             GOOD MOOD
           </span>
-          <span className="text-2xl text-black mx-4">✦</span>
-          <span className="font-folklore uppercase text-4xl font-bold text-[#FFA200] mx-8">
-            IT'S A VIBE
+          <span className="inline-flex items-center justify-center w-[32px] h-[36px] text-[28px] leading-[28px] text-[#26224D] flex-shrink-0">
+            ✦
           </span>
-          <span className="text-2xl text-black mx-4">✦</span>
-          <span className="font-folklore uppercase text-4xl font-bold text-[#FFA200] mx-8">
+          <span className="font-folklore uppercase text-[24px] font-normal leading-[100%] tracking-[-0.01em] text-[#FFA200] inline-flex items-center justify-center min-w-[151px] h-[28px] px-4 flex-shrink-0">
+            ITS A VIBE
+          </span>
+          <span className="inline-flex items-center justify-center w-[32px] h-[36px] text-[28px] leading-[28px] text-[#26224D] flex-shrink-0">
+            ✦
+          </span>
+          <span className="font-folklore uppercase text-[24px] font-normal leading-[100%] tracking-[-0.01em] text-[#FFA200] inline-flex items-center justify-center min-w-[220px] h-[28px] px-4 flex-shrink-0">
             SKINCARE FOR REBELS
           </span>
-          <span className="text-2xl text-black mx-4">✦</span>
-          <span className="font-folklore uppercase text-4xl font-bold text-[#FFA200] mx-8">
+          <span className="inline-flex items-center justify-center w-[32px] h-[36px] text-[28px] leading-[28px] text-[#26224D] flex-shrink-0">
+            ✦
+          </span>
+          <span className="font-folklore uppercase text-[24px] font-normal leading-[100%] tracking-[-0.01em] text-[#FFA200] inline-flex items-center justify-center min-w-[151px] h-[28px] px-4 flex-shrink-0">
             GLOW LOUD
           </span>
-          <span className="text-2xl text-black mx-4">✦</span>
-          <span className="font-folklore uppercase text-4xl font-bold text-[#FFA200] mx-8">
+          <span className="inline-flex items-center justify-center w-[32px] h-[36px] text-[28px] leading-[28px] text-[#26224D] flex-shrink-0">
+            ✦
+          </span>
+          <span className="font-folklore uppercase text-[24px] font-normal leading-[100%] tracking-[-0.01em] text-[#FFA200] inline-flex items-center justify-center min-w-[151px] h-[28px] px-4 flex-shrink-0">
             REBEL
           </span>
         </div>

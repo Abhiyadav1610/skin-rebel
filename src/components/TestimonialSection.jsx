@@ -56,9 +56,9 @@ const TestimonialSection = () => {
   };
 
   return (
-    <section className="relative w-screen min-h-screen bg-[#FFF9F2] py-8 px-4 sm:px-6 lg:px-8 xl:min-h-[988px] xl:flex xl:justify-center">
+    <section className="relative w-full min-h-screen bg-[#FFF9F2] py-8 px-4 sm:px-6 lg:px-8 xl:min-h-[988px] xl:flex xl:justify-center overflow-x-hidden">
       {/* Centered container wrapper for large screens */}
-      <div className="relative w-full max-w-[1440px] min-h-[800px] sm:min-h-[900px] lg:min-h-[950px] xl:h-[988px]">
+      <div className="relative w-full max-w-[1440px] min-h-[800px] sm:min-h-[900px] lg:min-h-[950px] xl:h-[988px] overflow-x-hidden">
         <div className="relative w-full h-full xl:absolute xl:flex xl:justify-center xl:items-center xl:rounded-[64px] xl:bg-[#FFF9F2]">
           {/* Mobile and Tablet Layout */}
           <div className="block xl:hidden">
@@ -226,7 +226,7 @@ const TestimonialSection = () => {
             </div>
 
             {/* Testimonial images with both img6 (center) and img7 (bottom) overlays */}
-            <div className="absolute flex flex-row justify-between w-[1296px] h-[430px] top-[400px] left-1/2 transform -translate-x-1/2">
+            <div className="absolute flex flex-row justify-between w-full max-w-[1296px] h-[430px] top-[400px] left-1/2 transform -translate-x-1/2 px-4">
               {testimonialImages.map((testimonial, idx) => (
                 <div
                   key={idx}

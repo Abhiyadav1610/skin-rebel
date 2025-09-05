@@ -19,8 +19,9 @@ function App() {
       <PromotionalSection/>
       <TestimonialSection/>
       <ProductView/>
+      <Footer/> 
       {/*
-      <Footer/> */}
+      */}
     </div>
   );
 }
